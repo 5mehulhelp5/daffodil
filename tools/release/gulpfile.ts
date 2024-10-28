@@ -10,6 +10,10 @@ import { publish } from './publish/publish';
 import { leafVersion } from './version/leaf-version';
 import { version } from './version/version';
 export { addPackagesToReadme } from './packages/add-packages-to-readme';
+export {
+  annotateDeprecationMessages,
+  checkForRemovals,
+} from './deprecation';
 
 export const release = series(
   prepare,
