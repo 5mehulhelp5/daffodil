@@ -71,7 +71,7 @@
 		}
 
 		&:not(:empty) {
-			+ #{$root}__content {
+			~ #{$root}__content {
 				margin-top: var(--daff-sidebar-side-fixed-top-shift);
 			}
 		}
