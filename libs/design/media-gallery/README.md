@@ -1,5 +1,8 @@
 # Media Gallery
-`<daff-media-gallery>` is used to display a group of `[daffThumbnail]`s in a gallery format. Media galleries are useful to showcase multiple images related to a single product or topic.
+Media gallery is used to display a group of thumbnails in a gallery format.
+
+## Overview
+Media galleries are useful to showcase multiple images related to a single product or topic.
 
 ## Usage
 
