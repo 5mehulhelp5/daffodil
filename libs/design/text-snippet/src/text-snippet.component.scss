@@ -1,0 +1,45 @@
+@mixin line-clamp() {
+	display: -webkit-box; // stylelint-disable-line value-no-vendor-prefix
+	line-clamp: 1;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+:host {
+	display: block;
+	position: relative;
+
+	::ng-deep { // stylelint-disable-line selector-pseudo-element-no-unknown
+		.daff-text-snippet__content {
+			> {
+				* {
+					&:first-child {
+						margin-top: 0;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		h2 {
+			&:first-of-type {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.daff-text-snippet {
+	&__content {
+		display: block;
+
+		&.condensed { // stylelint-disable-line selector-class-pattern
+			@include line-clamp();
+			width: 100%;
+		}
+	}
+}
