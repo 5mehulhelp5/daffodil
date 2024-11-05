@@ -6,11 +6,10 @@ import {
   EventEmitter,
   Output,
   ElementRef,
-  AfterViewInit,
   ViewChild,
 } from '@angular/core';
 
-import { DaffButtonModule } from '@daffodil/design/button';
+import { DAFF_BUTTON_COMPONENTS } from '@daffodil/design/button';
 
 @Component({
   selector: 'daff-text-snippet',
@@ -20,10 +19,10 @@ import { DaffButtonModule } from '@daffodil/design/button';
   standalone: true,
   imports: [
     NgIf,
-    DaffButtonModule,
+    DAFF_BUTTON_COMPONENTS,
   ],
 })
-export class DaffTextSnippetComponent implements AfterViewInit {
+export class DaffTextSnippetComponent {
 
   /**
    * A property to track whether or not the component
@@ -41,29 +40,8 @@ export class DaffTextSnippetComponent implements AfterViewInit {
    */
   @Output() toggle: EventEmitter<boolean> = new EventEmitter();
 
-  calculateHeight() {
-    const ref = this.html ? this.htmlRef : this.contentRef;
-
-    if(!ref || !ref.nativeElement.firstChild) {
-      return;
-    }
-
-    const heightNode = ref.nativeElement.firstChild.nodeType === 1 ? ref.nativeElement.firstChild : ref.nativeElement;
-
-    if(this.condensed) {
-      ref.nativeElement.style.height = window.getComputedStyle(heightNode, null).getPropertyValue('line-height');
-    } else {
-      ref.nativeElement.style.height = null;
-    }
-  }
-
   toggleSnippet() {
     this.condensed = !this.condensed;
-    this.calculateHeight();
     this.toggle.emit(this.condensed);
-  }
-
-  ngAfterViewInit() {
-    this.calculateHeight();
   }
 }

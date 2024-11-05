@@ -1,3 +1,11 @@
+@mixin line-clamp() {
+	display: -webkit-box; // stylelint-disable-line value-no-vendor-prefix
+	line-clamp: 1;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
 :host {
 	display: block;
 	position: relative;
@@ -30,8 +38,8 @@
 		display: block;
 
 		&.condensed { // stylelint-disable-line selector-class-pattern
+			@include line-clamp();
 			width: 100%;
-			overflow: hidden;
 		}
 	}
 }
