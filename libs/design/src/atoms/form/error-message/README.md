@@ -1,5 +1,5 @@
-# Error Message
-`<daff-error-message>` is a component that works alongside the `<daff-form-field>` component to style and place the error message and its associated form control element appropriately.
+# Error message
+Error message that works alongside the Form Field component to style and place the error message and its associated form control element appropriately.
 
 ## Usage
 

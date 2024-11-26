@@ -1,5 +1,5 @@
 # Link Set
-`<daff-link-set>` is a component for displaying two or more `[daff-link-set-item]`s. `<daff-link-set>`s can be nested.
+Link set is a component for displaying two or more link set items.
 
 ## Usage
 
