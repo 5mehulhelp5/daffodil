@@ -1,5 +1,8 @@
 # Image
-Image utilizes the native HTML `<img>` element to display responsive images on a page and prevent content jumping while images are loading. `<daff-image>` is an opinionated version that encourages friendly end-user usage.
+Image utilizes the native HTML `<img>` element to display responsive images on a page and prevent content jumping while images are loading. 
+
+## Overview
+`<daff-image>` is an opinionated version that encourages friendly end-user usage.
 
 <design-land-example-viewer-container example="load-image"></design-land-example-viewer-container>
 

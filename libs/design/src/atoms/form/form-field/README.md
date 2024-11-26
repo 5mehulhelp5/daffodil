@@ -1,6 +1,8 @@
-# Form Field Component
+# Form field
+Form field a wrapping component for form control elements.
 
-`daff-form-field` is a wrapping component for form control elements. It is used to style certain controls that would otherwise be impossible to style with normal css and organize error messages alongside their associated form controls.
+## Overview
+It's used to style certain controls that would otherwise be impossible to style with normal css and organize error messages alongside their associated form controls.
 
 ## Usage
 
