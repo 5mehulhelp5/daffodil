@@ -86,9 +86,9 @@ Define your themes by using the `daff-configure-theme` function:
 | $tertiary | Specifies the configured palette to use for your app's tertiary color.   |
 | $type | Specifies the type of theme. This can be `light` or `dark`.                  |
 
-```scss
-app-theme.scss
+`app-theme.scss`
 
+```scss
 @use '@daffodil/design/scss/theme' as daff-theme;
 @use 'app-color-palettes' as palette; // path to palettes file
 
@@ -106,7 +106,7 @@ $theme-dark: daff-theme.daff-configure-theme($app-primary-dark, $app-secondary-d
 ```
 
 #### Setting up the styles file with your custom theme
-Create classes in the `styles.scss` file to include the `daff-theme` mixin for `$theme` and `$theme-dark` variables. This will allow you to set a click event on a button to switch between modes. [View this setup in Stackblitz](https://stackblitz.com/edit/ng13-daffodil-design-custom-theme)
+Create classes in the `styles.scss` file to include the `daff-theme` mixin for `$theme` and `$theme-dark` variables. This will allow you to set a click event on a button to switch between modes. [View this setup in Stackblitz](https://stackblitz.com/edit/ng13-daffodil-design-custom-theme).
 
 `styles.scss`
 
