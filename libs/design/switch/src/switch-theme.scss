@@ -1,0 +1,31 @@
+@use 'sass:map';
+@use '../../scss/core';
+@use '../../scss/theming';
+
+@mixin daff-switch-theme($theme) {
+	$primary: map.get($theme, primary);
+	$base: core.daff-map-deep-get($theme, 'core.base');
+	$base-contrast: core.daff-map-deep-get($theme, 'core.base-contrast');
+	$white: core.daff-map-deep-get($theme, 'core.white');
+	$black: core.daff-map-deep-get($theme, 'core.black');
+	$neutral: core.daff-map-deep-get($theme, 'core.neutral');
+
+	.daff-switch {
+		&__toggle {
+			background-color: theming.daff-illuminate($base, $neutral, 3);
+			border: 2px solid transparent;
+
+			&:focus-within {
+				border: 2px solid theming.daff-illuminate($base, $neutral, 2);
+			}
+
+			&.daff-checked {
+				background-color: theming.daff-color($primary);
+			}
+
+			&::before {
+				background-color: $base;
+			}
+		}
+	}
+}
