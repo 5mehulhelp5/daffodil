@@ -4,7 +4,6 @@
     "@stylistic/stylelint-plugin"
   ],
   "extends": "stylelint-config-recommended-scss",
-  
   "rules": {
     "color-hex-length": "long",
     "color-no-invalid-hex": true,
