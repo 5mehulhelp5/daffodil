@@ -1,0 +1,65 @@
+@use 'true' as *;
+@use './map-get' as *;
+@use '../../error/error-to-string';
+
+@include describe('map-get') {
+	$nested-map: (
+		'string': '3',
+		'number': 4,
+	);
+
+	$map: (
+		'nested': (
+			'string': '1',
+			'number': 2,
+			'map': $nested-map,
+		),
+	);
+
+	$deep-map: (
+		'level1': (
+			'level2': (
+				'level3': (
+					'level': 4,
+				),
+			),
+		),
+	);
+
+	$empty-map: ();
+
+	@include error-to-string.set-use-string(true);
+
+	@include it('returns the value of the nested key if it exists in the map') {
+		@include assert-equal(daff-map-get($map, 'nested', 'string'), '1');
+		@include assert-equal(daff-map-get($map, 'nested', 'number'), 2);
+		@include assert-equal(daff-map-get($map, 'nested', 'map'), $nested-map);
+		@include assert-equal(daff-map-get($map, 'nested', 'map', 'string'), '3');
+		@include assert-equal(daff-map-get($map, 'nested', 'map', 'number'), 4);
+	}
+
+	@include it('returns the correct value for deeply nested maps') {
+		@include assert-equal(
+			daff-map-get($deep-map, 'level1', 'level2', 'level3', 'level'),
+			4
+		);
+	}
+
+	@include it(
+		'errors if the value of the nested key does not exist in the map'
+	) {
+		@include assert-equal(
+			daff-map-get($map, 'missing'),
+			"The map doesn't contain the $key: `missing`'"
+		);
+	}
+
+	@include it('errors if the map is empty') {
+		@include assert-equal(
+			daff-map-get($empty-map, 'nested'),
+			"The map doesn't contain the $key: `nested`'"
+		);
+	}
+
+	@include error-to-string.set-use-string(false);
+}

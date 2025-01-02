@@ -2,10 +2,10 @@
 @use 'theme' as daff-theme;
 
 @mixin sidebar-viewport-theme($theme) {
-	$neutral: daff-theme.daff-map-deep-get($theme, 'core.neutral');
-	$base: daff-theme.daff-map-deep-get($theme, 'core.base');
-	$base-contrast: daff-theme.daff-map-deep-get($theme, 'core.base-contrast');
-	$primary: map.get($theme, primary);
+	$neutral: daff-theme.daff-map-get($theme, 'core', 'neutral');
+	$base: daff-theme.daff-map-get($theme, 'core', 'base');
+	$base-contrast: daff-theme.daff-map-get($theme, 'core', 'base-contrast');
+	$primary: daff-theme.daff-map-get($theme, primary);
 
 	.design-land-sidebar-viewport {
 		&__sidebar {
