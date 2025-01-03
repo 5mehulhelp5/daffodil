@@ -19,6 +19,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { DAFF_THEME_INITIALIZER } from '@daffodil/design';
 import { provideDaffRouterActivatedRoute } from '@daffodil/router';
+import { provideDaffSeoRouterSchema } from '@daffodil/seo/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { DaffioAppComponent } from './app.component';
@@ -63,6 +64,7 @@ bootstrap: [
     useValue: 'serverApp',
   },
   provideDaffRouterActivatedRoute(),
+  provideDaffSeoRouterSchema(),
   provideHttpClient(withInterceptorsFromDi()),
 ] })
 export class AppModule {}
