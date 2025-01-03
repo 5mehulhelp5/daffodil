@@ -1,4 +1,8 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import {
+  Inject,
+  Injectable,
+} from '@angular/core';
 import { Apollo } from 'apollo-angular';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -10,6 +14,7 @@ import { MagentoRouteResponse } from '@daffodil/external-router/driver/magento';
 
 import { MagentoResolveUrlv243 } from './graphql/queries/resolve';
 import { transformResolutionToResolvableUrlv243 } from './transforms/resolution-to-resolvable-url';
+import { transformClientUrls } from './transforms/transform-client-urls';
 
 
 /**
@@ -25,6 +30,7 @@ export class DaffExternalRouterMagentoDriver
 implements DaffExternalRouterDriverInterface {
   constructor(
     private apollo: Apollo,
+    @Inject(DOCUMENT) private document: Document,
   ) {}
 
   resolve(url: string): Observable<DaffExternallyResolvableUrl> {
@@ -35,6 +41,10 @@ implements DaffExternalRouterDriverInterface {
           url,
         },
       })
-      .pipe(map(response => transformResolutionToResolvableUrlv243(response.data.route)));
+      .pipe(
+        map((response) => response.data.route),
+        map((route) => transformClientUrls(route, this.document.location.origin)),
+        map(route => transformResolutionToResolvableUrlv243(route)),
+      );
   }
 }

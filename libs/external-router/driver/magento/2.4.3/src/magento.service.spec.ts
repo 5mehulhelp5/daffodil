@@ -15,6 +15,7 @@ import {
 import { MagentoResolveUrlv243 } from './graphql/queries/resolve';
 import { DaffExternalRouterDriverMagentoModule } from './magento.module';
 import { DaffExternalRouterMagentoDriver } from './magento.service';
+import { createMagentoProductRoute } from '../testing/create-product-route';
 
 describe('@daffodil/external-router/driver/magento/2.4.3 | DaffExternalRouterMagentoDriver', () => {
   let service: DaffExternalRouterMagentoDriver;
@@ -44,12 +45,10 @@ describe('@daffodil/external-router/driver/magento/2.4.3 | DaffExternalRouterMag
     requestUrl = `/${responseUrl}`;
     id = 'id';
     resolution = {
-      route: {
+      route: createMagentoProductRoute({
         relative_url: responseUrl,
-        type: MagentoUrlRewriteEntityTypeEnum.PRODUCT,
-        redirect_code: 0,
         uid: id,
-      },
+      }),
     };
 
     resolvableUrl = {
