@@ -1,4 +1,5 @@
 export { DaffSeoUpdateEventPair } from './model/update-event-pair.interface';
+export { DaffRouteWithSeoData } from './model/route-with-seo-data';
 export {
   DAFF_SEO_META_ROUTER_UPDATES,
   provideDaffMetaRouterUpdates,
@@ -14,3 +15,5 @@ export {
 export { daffSeoRouterTitleProvider } from './providers/title-provider';
 export { daffSeoRouterMetaProvider } from './providers/meta-provider';
 export { daffSeoRouterCanonicalProvider } from './providers/canonical-provider';
+export { provideDaffSeoRouterSchema } from './schema/provider';
+
