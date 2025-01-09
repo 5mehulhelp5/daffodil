@@ -19,8 +19,8 @@ import { DaffDoc } from '@daffodil/docs-utils';
 import { DaffioDocsPageComponent } from './docs-page.component';
 import { DaffioDocsFactory } from '../../../docs/testing/factories/docs.factory';
 
-@Component({ selector: 'daffio-doc-viewer', template: '' })
-class MockDaffioDocViewerComponent {
+@Component({ selector: 'daffio-doc-renderer', template: '' })
+class MockDaffioDocRendererComponent {
   @Input() doc: DaffDoc;
 }
 
@@ -35,7 +35,7 @@ describe('DaffioDocsPageComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
-        MockDaffioDocViewerComponent,
+        MockDaffioDocRendererComponent,
       ],
       imports: [
         DaffioDocsPageComponent,
@@ -65,8 +65,8 @@ describe('DaffioDocsPageComponent', () => {
     expect(component.doc$).toBeObservable(expected);
   });
 
-  it('should pass the down the observed doc to the `daffio-doc-viewer`', () => {
-    const docViewerComponent = fixture.debugElement.query(By.css('daffio-doc-viewer')).componentInstance;
+  it('should pass the down the observed doc to the `daffio-doc-article`', () => {
+    const docViewerComponent: MockDaffioDocRendererComponent = fixture.debugElement.query(By.css('daffio-doc-renderer')).componentInstance;
     expect(docViewerComponent.doc).toEqual(doc);
   });
 });
