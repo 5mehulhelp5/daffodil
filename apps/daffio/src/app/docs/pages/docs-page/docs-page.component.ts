@@ -1,8 +1,12 @@
-import { AsyncPipe } from '@angular/common';
+import {
+  AsyncPipe,
+  NgComponentOutlet,
+} from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
   OnInit,
+  Type,
 } from '@angular/core';
 import {
   ActivatedRoute,
@@ -13,7 +17,8 @@ import { map } from 'rxjs/operators';
 
 import { DaffDoc } from '@daffodil/docs-utils';
 
-import { DaffioDocRendererComponent } from '../../components/doc-renderer/component';
+import { DaffioDocsDynamicContentComponentService } from '../../dynamic-content/dynamic-content-component.service';
+import { DaffioDocsDynamicContent } from '../../dynamic-content/dynamic-content.type';
 
 @Component({
   selector: 'daffio-docs-page',
@@ -23,15 +28,25 @@ import { DaffioDocRendererComponent } from '../../components/doc-renderer/compon
   imports: [
     AsyncPipe,
     RouterModule,
-    DaffioDocRendererComponent,
+    NgComponentOutlet,
+  ],
+  providers: [
+    DaffioDocsDynamicContentComponentService,
   ],
 })
 export class DaffioDocsPageComponent implements OnInit {
   doc$: Observable<DaffDoc>;
+  component$: Observable<Type<DaffioDocsDynamicContent>>;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+    private componentService: DaffioDocsDynamicContentComponentService,
+  ) {}
 
   ngOnInit() {
     this.doc$ = this.route.data.pipe(map((data: { doc: DaffDoc }) => data.doc));
+    this.component$ = this.doc$.pipe(
+      map((doc) => this.componentService.getComponent(doc)),
+    );
   }
 }

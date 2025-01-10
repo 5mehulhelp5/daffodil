@@ -4,20 +4,20 @@ import {
   input,
   computed,
 } from '@angular/core';
-import { DaffioSafeHtmlPipe } from 'apps/daffio/src/app/core/html-sanitizer/safe.pipe';
 
 import {
   DaffApiDoc,
   DaffDocKind,
 } from '@daffodil/docs-utils';
 
+import { DaffioSafeHtmlPipe } from '../../../../core/html-sanitizer/safe.pipe';
 import { DaffioDocArticleModule } from '../../../components/doc-article/module';
-import { DaffioDocComponent } from '../../../components/doc-renderer/component.type';
+import { DaffioDocsDynamicContent } from '../../../dynamic-content/dynamic-content.type';
 import { DaffioApiPackageComponent } from '../api-package/api-package.component';
 
 @Component({
-  selector: 'daffio-api-doc',
-  templateUrl: './component.html',
+  selector: 'daffio-docs-api-content',
+  templateUrl: './api-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [
@@ -26,7 +26,7 @@ import { DaffioApiPackageComponent } from '../api-package/api-package.component'
     DaffioSafeHtmlPipe,
   ],
 })
-export class DaffioDocApiComponent implements DaffioDocComponent<DaffApiDoc> {
+export class DaffioDocsApiContentComponent implements DaffioDocsDynamicContent<DaffApiDoc> {
   static readonly kind = DaffDocKind.API;
 
   readonly isApiPackage = computed(() => this.doc().docType === 'package');

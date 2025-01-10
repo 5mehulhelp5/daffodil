@@ -7,12 +7,12 @@ import {
 import { DaffDoc } from '@daffodil/docs-utils';
 
 import { DaffioSafeHtmlPipe } from '../../../core/html-sanitizer/safe.pipe';
+import { DaffioDocsDynamicContent } from '../../dynamic-content/dynamic-content.type';
 import { DaffioDocArticleModule } from '../doc-article/module';
-import { DaffioDocComponent } from '../doc-renderer/component.type';
 
 @Component({
-  selector: 'daffio-doc-default',
-  templateUrl: './component.html',
+  selector: 'daffio-doc-default-content',
+  templateUrl: './default-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [
@@ -20,6 +20,6 @@ import { DaffioDocComponent } from '../doc-renderer/component.type';
     DaffioSafeHtmlPipe,
   ],
 })
-export class DaffioDocDefaultComponent<T extends DaffDoc = DaffDoc> implements DaffioDocComponent<T> {
+export class DaffioDocsDefaultContentComponent<T extends DaffDoc = DaffDoc> implements DaffioDocsDynamicContent<T> {
   doc = input<T>();
 }
