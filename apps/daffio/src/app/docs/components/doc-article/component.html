@@ -8,7 +8,7 @@
       @if (breadcrumbs.length > 0) {
         <nav aria-label="Breadcrumb">
           <ol daff-breadcrumb>
-            @for (breadcrumb of breadcrumbs(); track $index) {
+            @for (breadcrumb of breadcrumbs; track $index) {
               <li daffBreadcrumbItem [active]="$last">
                 @if ($last) {
                   {{breadcrumb.label}}
@@ -24,7 +24,7 @@
       <ng-content></ng-content>
     </daff-article>
   </div>
-  @if (toc) {
+  @if (toc.length > 0) {
     <daffio-docs-table-of-contents
       class="daffio-doc-article__table-of-contents"
       [tableOfContents]="toc">
