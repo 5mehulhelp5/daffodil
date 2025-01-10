@@ -9,9 +9,7 @@ import {
  * style by toggling a CSS class. This is useful for creating components that can
  * switch between regular and compact styles based on the `compact` property.
  *
- * ## Usage
- *
- * ### Implementing it as an attribute directive
+ * @example Implementing it as an attribute directive
  *
  * ```html
  * <div daffCompactable [compact]="isCompact">Content goes here</div>
@@ -20,7 +18,7 @@ import {
  * In this example, the `daff-compact` class is applied to the `div` element when
  * `isCompact` is `true`, making the `div` display its compact state.
  *
- * ### Implementing it as an Angular host directive
+ * @example Implementing it as an Angular host directive
  *
  * ```ts
  * @Component({
@@ -37,8 +35,11 @@ import {
  * export class CustomComponent { }
  * ```
  *
+ * The directive applies the `daff-compact` class to the component and
+ * should be defined in your styles to display the compact state as desired.
+ *
  * ```scss
- * .custom-component {
+ * :host {
  *  padding: 8px 16px;
  *
  *  &.daff-compact {
@@ -46,11 +47,6 @@ import {
  *  }
  * }
  * ```
- *
- * ## Styles
- *
- * The `daff-compact` class should be defined in your styles to display the compact
- * state as desired.
  */
 @Directive({
   selector: '[daffCompactable]',
