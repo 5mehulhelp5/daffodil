@@ -1,4 +1,7 @@
-import { NgTemplateOutlet } from '@angular/common';
+import {
+  Location,
+  NgTemplateOutlet,
+} from '@angular/common';
 import {
   Component,
   HostBinding,
@@ -12,7 +15,13 @@ import {
   EventEmitter,
   ViewChildren,
   ChangeDetectorRef,
+  OnInit,
 } from '@angular/core';
+import {
+  Params,
+  RouterLink,
+  RouterLinkActive,
+} from '@angular/router';
 
 import { DaffTabComponent } from './tab/tab.component';
 import { DaffTabActivatorComponent } from './tab-activator/tab-activator.component';
@@ -54,18 +63,20 @@ import { DaffTabLabelComponent } from './tab-label/tab-label.component';
   standalone: true,
   imports: [
     NgTemplateOutlet,
+    RouterLink,
+    RouterLinkActive,
     DaffTabActivatorComponent,
   ],
 })
 
-export class DaffTabsComponent implements AfterContentInit {
+export class DaffTabsComponent implements AfterContentInit, OnInit {
   /**
    * @docs-private
    */
   @HostBinding('class.daff-tabs') private class = true;
 
   /**
-   * The currently selected tab. This property is dynamically updated when a user selects a tab
+   * The currently selected tab. This property is dynamically updated when a user selects a tab.
    */
   selectedTab: string;
 
@@ -83,6 +94,22 @@ export class DaffTabsComponent implements AfterContentInit {
    * aria-label for the tab.
    */
   @Input('aria-label') ariaLabel = '';
+
+  /**
+   * Replace the tab buttons with links.
+   */
+  @Input() linkMode = false;
+
+  /**
+   * The URL to navigate to when the component is in link mode.
+   * This component will set the specified query param.
+   */
+  @Input() url?: string;
+
+  /**
+   * The query parameter that the tabs component will use to set the tab value in link mode.
+   */
+  @Input() queryParam = 'tab';
 
   /**
    * Event emitted when tab selection changes.
@@ -104,7 +131,26 @@ export class DaffTabsComponent implements AfterContentInit {
    */
   @ViewChildren(DaffTabActivatorComponent) _tabActivators: QueryList<DaffTabActivatorComponent>;
 
-  constructor(private cdRef: ChangeDetectorRef) {}
+  get currentPath(): string {
+    return this.location.path();
+  }
+
+  constructor(
+    private cdRef: ChangeDetectorRef,
+    private location: Location,
+  ) {}
+
+  /**
+   * @docs-private
+   */
+  ngOnInit(): void {
+    this.location.onUrlChange(() => {
+      if (this.linkMode) {
+        this.selectedTab = null;
+        this.ngAfterContentInit();
+      }
+    });
+  }
 
   /**
    * @docs-private
@@ -153,6 +199,15 @@ export class DaffTabsComponent implements AfterContentInit {
     } while (array[newIndex].disabled && selectedIndex !== startingIndex); // Skip disabled tabs
 
     this.select(array[newIndex].id);
+  }
+
+  /**
+   * @docs-private
+   */
+  _buildQueryParams(tab: string): Params {
+    return {
+      [this.queryParam]: tab,
+    };
   }
 
   /**
