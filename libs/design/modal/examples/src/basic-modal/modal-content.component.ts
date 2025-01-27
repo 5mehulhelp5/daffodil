@@ -11,7 +11,6 @@ import { DAFF_MODAL_COMPONENTS } from '@daffodil/design/modal';
   selector: 'basic-modal-content',
   templateUrl: './modal-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_MODAL_COMPONENTS,
     DaffButtonComponent,

@@ -19,7 +19,6 @@ import { provideTestMenuService } from '../testing/dummy-service';
     <button daffMenuActivator="menu"></button>
     <daff-menu #menu></daff-menu>
   `,
-  standalone: true,
   imports: [
     DaffMenuComponent,
     DaffMenuActivatorDirective,

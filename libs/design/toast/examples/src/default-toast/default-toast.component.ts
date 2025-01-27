@@ -18,7 +18,6 @@ import {
   templateUrl: './default-toast.component.html',
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffButtonComponent,
   ],

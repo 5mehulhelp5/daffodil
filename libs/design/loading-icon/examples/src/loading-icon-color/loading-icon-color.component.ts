@@ -20,7 +20,6 @@ import { DAFF_LOADING_ICON_COMPONENTS } from '@daffodil/design/loading-icon';
     }
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_LOADING_ICON_COMPONENTS,
     ReactiveFormsModule,

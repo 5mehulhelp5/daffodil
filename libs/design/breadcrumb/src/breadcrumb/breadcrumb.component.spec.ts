@@ -13,7 +13,6 @@ import { DaffBreadcrumbComponent } from './breadcrumb.component';
 
 @Component({
   template: `<ol daff-breadcrumb [skeleton]="skeleton"></ol>`,
-  standalone: true,
   imports: [
     DaffBreadcrumbComponent,
   ],

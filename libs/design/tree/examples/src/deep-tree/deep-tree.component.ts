@@ -14,7 +14,6 @@ import {
   selector: 'deep-tree',
   templateUrl: './deep-tree.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [DaffTreeModule, RouterLink],
 })
 export class DeepTreeComponent {

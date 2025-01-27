@@ -13,7 +13,6 @@ import { DaffCardActionsDirective } from './card-actions.directive';
 
 @Component({
   template: `<div daffCardActions></div>`,
-  standalone: true,
   imports: [
     DaffCardActionsDirective,
   ],

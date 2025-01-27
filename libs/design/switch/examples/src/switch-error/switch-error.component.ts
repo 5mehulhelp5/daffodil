@@ -14,7 +14,6 @@ import { DAFF_SWITCH_COMPONENTS } from '@daffodil/design/switch';
   selector: 'switch-error',
   templateUrl: './switch-error.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_SWITCH_COMPONENTS,
     ReactiveFormsModule,

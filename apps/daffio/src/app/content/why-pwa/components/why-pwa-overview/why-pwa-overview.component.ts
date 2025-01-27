@@ -15,6 +15,7 @@ import {
   templateUrl: './why-pwa-overview.component.html',
   styleUrls: ['./why-pwa-overview.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 
 export class DaffioWhyPwaOverviewComponent {

@@ -18,7 +18,6 @@ import { provideTestMenuService } from '../testing/dummy-service';
 
 @Component({
   template: `<daff-menu></daff-menu>`,
-  standalone: true,
   imports: [
     DaffMenuComponent,
     DaffMenuItemComponent,

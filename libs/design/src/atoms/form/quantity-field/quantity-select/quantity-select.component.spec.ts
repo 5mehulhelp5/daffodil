@@ -27,6 +27,7 @@ import {
       [extendable]="extendableValue"
     ></daff-quantity-select>
   `,
+  standalone: false,
 })
 class WrapperComponent {
   minValue = 2;

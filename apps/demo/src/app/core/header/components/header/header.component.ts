@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
   selector: 'demo-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
+  standalone: false,
 })
 export class DemoHeaderComponent {
 

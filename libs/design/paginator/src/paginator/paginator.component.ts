@@ -34,7 +34,6 @@ const visiblePageRange = 2;
   styleUrls: ['./paginator.component.scss'],
   templateUrl: './paginator.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     FaIconComponent,
     RouterModule,

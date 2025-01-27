@@ -25,7 +25,6 @@ import { PaymentInfoFormGroup } from '../../models/payment-form.type';
       [formGroup]="formGroupValue"
     ></demo-payment-info-form>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutPaymentInfoFormComponent,
   ],

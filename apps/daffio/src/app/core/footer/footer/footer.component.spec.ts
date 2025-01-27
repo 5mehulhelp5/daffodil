@@ -21,6 +21,7 @@ import { DaffioFooterComponent } from './footer.component';
 
 @Component({
   template: `<daffio-footer></daffio-footer>`,
+  standalone: false,
 })
 class WrapperComponent { }
 

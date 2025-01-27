@@ -8,6 +8,7 @@ import { DaffArticleEncapsulatedDirective } from '@daffodil/design';
   hostDirectives: [{
     directive: DaffArticleEncapsulatedDirective,
   }],
+  standalone: false,
 })
 export class DesignLandArticleEncapsulatedComponent {
 }

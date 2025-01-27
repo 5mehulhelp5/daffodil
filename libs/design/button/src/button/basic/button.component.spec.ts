@@ -16,7 +16,6 @@ import { DaffButtonComponent } from './button.component';
     <a daff-button>Link Button</a>
     <button daff-button>Button</button>
   `,
-  standalone: true,
   imports: [
     DaffButtonComponent,
   ],

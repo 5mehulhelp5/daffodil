@@ -15,6 +15,7 @@ import { DaffColorableDirective } from './colorable.directive';
 @Component({
   template: `
 		<div daffColorable [color]="color"></div>`,
+  standalone: false,
 })
 
 class WrapperComponent {

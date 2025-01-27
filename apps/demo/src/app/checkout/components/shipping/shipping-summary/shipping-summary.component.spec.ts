@@ -17,7 +17,6 @@ import { DemoCheckoutShippingSummaryComponent } from './shipping-summary.compone
       [selectedShippingOption]="shippingValue"
       (editShippingInfo)="editShippingInfoFunction()"></demo-checkout-shipping-summary>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutShippingSummaryComponent,
   ],

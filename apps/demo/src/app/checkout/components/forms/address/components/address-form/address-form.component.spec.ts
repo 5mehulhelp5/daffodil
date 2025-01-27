@@ -32,7 +32,6 @@ import { DemoCheckoutAddressFormGroup } from '../../models/address-form.type';
       [formGroup]="formGroupValue"
     ></demo-checkout-address-form>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutAddressFormComponent,
   ],

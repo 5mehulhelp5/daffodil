@@ -18,7 +18,6 @@ import { DaffModalActionsComponent } from './modal-actions.component';
       <button>Save</button>
     </daff-modal-actions>
   `,
-  standalone: true,
   imports: [
     DaffModalActionsComponent,
   ],

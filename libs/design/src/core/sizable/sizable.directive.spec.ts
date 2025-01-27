@@ -15,6 +15,7 @@ import { DaffSizableDirective } from './sizable.directive';
 @Component({
   template: `
 		<div daffSizable [size]="size"></div>`,
+  standalone: false,
 })
 
 class WrapperComponent {

@@ -16,7 +16,6 @@ import { DAFF_PROGRESS_BAR_COMPONENTS } from '@daffodil/design/progress-bar';
       gap: 8px;
     }`],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_PROGRESS_BAR_COMPONENTS,
   ],

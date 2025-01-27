@@ -15,7 +15,6 @@ import { DaffTextSnippetComponent } from './text-snippet.component';
 
 @Component({
   template: '<daff-text-snippet [condensed]="condensed" [html]="html">content</daff-text-snippet>',
-  standalone: true,
   imports: [
     DaffButtonModule,
     DaffTextSnippetComponent,

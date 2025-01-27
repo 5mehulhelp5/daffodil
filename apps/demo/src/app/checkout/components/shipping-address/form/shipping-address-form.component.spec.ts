@@ -24,7 +24,6 @@ import { DemoCheckoutAddressFormGroup } from '../../forms/address/models/address
       [shippingAddress]="shippingAddressValue"
       (submitted)="submittedFunction($event)"></demo-checkout-shipping-address-form>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutShippingAddressFormComponent,
   ],

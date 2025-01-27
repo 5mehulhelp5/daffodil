@@ -13,7 +13,6 @@ import { MenuContentComponent } from './menu-content/menu-content.component';
   selector: 'basic-menu',
   templateUrl: './basic-menu.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffButtonComponent,
     DaffMenuModule,

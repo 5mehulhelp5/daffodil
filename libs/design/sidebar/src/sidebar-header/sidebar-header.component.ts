@@ -17,7 +17,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./sidebar-header.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     FaIconComponent,
     NgIf,

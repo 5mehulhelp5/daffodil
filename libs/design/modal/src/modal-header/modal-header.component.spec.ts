@@ -14,7 +14,6 @@ import { DaffModalService } from '../service/modal.service';
 
 @Component ({
   template: `<daff-modal-header [dismissible]="dismissible"></daff-modal-header>`,
-  standalone: true,
   imports: [
     DaffModalHeaderComponent,
   ],

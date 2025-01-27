@@ -16,6 +16,7 @@ export enum LogoSize {
   templateUrl: './logo.component.html',
   styleUrls: ['./logo.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class LogoComponent{
   @Input() size: LogoSize = LogoSize.ICON;

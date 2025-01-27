@@ -31,7 +31,6 @@ import { PaymentInfoFormFactory } from '../payment-info-form/factories/payment-i
   selector: 'demo-checkout-payment-form',
   templateUrl: './payment-form.component.html',
   styleUrls: ['./payment-form.component.scss'],
-  standalone: true,
   imports: [
     CommonModule,
     ReactiveFormsModule,

@@ -23,7 +23,6 @@ import { DaffTreeComponent } from '../tree.component';
       </ng-template>
     </ul>
   `,
-  standalone: true,
   imports: [
     DaffTreeComponent,
   ],

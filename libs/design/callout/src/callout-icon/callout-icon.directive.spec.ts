@@ -15,7 +15,6 @@ import { DaffCalloutIconDirective } from './callout-icon.directive';
   template: `
     <h3 daffCalloutIcon>Lorem Ipsum</h3>
   `,
-  standalone: true,
   imports: [
     DaffCalloutIconDirective,
   ],

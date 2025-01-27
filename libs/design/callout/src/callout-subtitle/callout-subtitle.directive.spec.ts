@@ -15,7 +15,6 @@ import { DaffCalloutSubtitleDirective } from './callout-subtitle.directive';
   template: `
     <p daffCalloutSubtitle>Lorem Ipsum</p>
   `,
-  standalone: true,
   imports: [
     DaffCalloutSubtitleDirective,
   ],

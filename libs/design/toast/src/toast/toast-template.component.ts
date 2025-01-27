@@ -116,8 +116,7 @@ import { DaffToastTitleDirective } from '../toast-title/toast-title.directive';
       transition(':enter', [
         style({ opacity: '0', transform: 'translate({{startX}}, {{startY}})' }),
         animate('300ms ease-out', style({ opacity: '1', transform: 'translate({{endX}}, {{endY}})' })),
-      ],
-      { params: {
+      ], { params: {
         startX: '0',
         startY: '0',
         endX: '0',
@@ -125,7 +124,6 @@ import { DaffToastTitleDirective } from '../toast-title/toast-title.directive';
       } }),
     ]),
   ],
-  standalone: true,
   imports: [
     DAFF_BUTTON_COMPONENTS,
     DaffToastComponent,

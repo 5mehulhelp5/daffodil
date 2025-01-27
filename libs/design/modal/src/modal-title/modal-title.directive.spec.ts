@@ -15,7 +15,6 @@ import { DaffModalTitleDirective } from './modal-title.directive';
   template: `
     <h2 daffModalTitle>Lorem Ipsum</h2>
   `,
-  standalone: true,
   imports: [
     DaffModalTitleDirective,
   ],

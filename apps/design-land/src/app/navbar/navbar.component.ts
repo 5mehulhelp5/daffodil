@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
+  standalone: false,
 })
 export class DesignLandNavbarComponent { }

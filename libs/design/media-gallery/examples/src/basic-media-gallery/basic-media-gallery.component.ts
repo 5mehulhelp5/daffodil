@@ -11,7 +11,6 @@ import { DAFF_MEDIA_GALLERY_COMPONENTS } from '@daffodil/design/media-gallery';
   selector: 'basic-media-gallery',
   templateUrl: './basic-media-gallery.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_MEDIA_GALLERY_COMPONENTS,
     DAFF_IMAGE_COMPONENTS,

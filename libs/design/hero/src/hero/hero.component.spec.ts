@@ -18,7 +18,6 @@ import { DaffHeroComponent } from './hero.component';
 
 @Component({
   template: `<daff-hero [color]="color" [textAlignment]="textAlignment" [compact]="compact"></daff-hero>`,
-  standalone: true,
   imports: [
     DaffHeroComponent,
   ],

@@ -13,6 +13,7 @@ import { DaffCartFacade } from '@daffodil/cart/state';
   selector: 'demo-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss'],
+  standalone: false,
 })
 export class CartComponent implements OnInit {
 

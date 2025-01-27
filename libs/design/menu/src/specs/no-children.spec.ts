@@ -21,7 +21,6 @@ import { provideTestMenuService } from '../testing/dummy-service';
       <button daff-menu-item id="not-focused">Test 2</button>
     </daff-menu>
   `,
-  standalone: true,
   imports: [
     DaffMenuComponent,
     DaffMenuItemComponent,

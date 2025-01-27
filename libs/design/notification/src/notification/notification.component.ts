@@ -49,7 +49,6 @@ enum DaffNotificationOrientationEnum {
   ],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     NgIf,
     FaIconComponent,

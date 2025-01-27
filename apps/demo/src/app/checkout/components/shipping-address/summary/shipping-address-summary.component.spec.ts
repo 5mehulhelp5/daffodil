@@ -19,7 +19,6 @@ import { DemoCheckoutShippingAddressSummaryComponent } from './shipping-address-
       (edit)="editShippingInfoFunction()"
     ></demo-checkout-shipping-address-summary>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutShippingAddressSummaryComponent,
   ],

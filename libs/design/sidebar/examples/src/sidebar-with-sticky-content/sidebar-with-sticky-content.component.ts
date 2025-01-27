@@ -11,7 +11,6 @@ import { DAFF_SIDEBAR_COMPONENTS } from '@daffodil/design/sidebar';
   templateUrl: './sidebar-with-sticky-content.component.html',
   styleUrls: ['sidebar-with-sticky-content.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_SIDEBAR_COMPONENTS,
   ],

@@ -13,7 +13,6 @@ import { DaffLinkSetSubheadingDirective } from './link-set-subheading.directive'
 
 @Component({
   template: `<div daffLinkSetSubheading>Subheading</div>`,
-  standalone: true,
   imports: [
     DaffLinkSetSubheadingDirective,
   ],

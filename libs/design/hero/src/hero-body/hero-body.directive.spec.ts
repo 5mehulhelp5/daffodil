@@ -13,7 +13,6 @@ import { DaffHeroBodyDirective } from './hero-body.directive';
 
 @Component({
   template: `<h1 daffHeroBody>Hero Body</h1>`,
-  standalone: true,
   imports: [
     DaffHeroBodyDirective,
   ],

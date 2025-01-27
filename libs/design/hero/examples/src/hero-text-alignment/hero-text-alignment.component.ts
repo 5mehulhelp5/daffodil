@@ -20,7 +20,6 @@ import { DAFF_HERO_COMPONENTS } from '@daffodil/design/hero';
   templateUrl: './hero-text-alignment.component.html',
   styleUrls: ['./hero-text-alignment.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_HERO_COMPONENTS,
     DAFF_CONTAINER_COMPONENTS,

@@ -13,7 +13,6 @@ import { DemoGeographyAddressSummaryComponent } from '../../../../geography/comp
   selector: 'demo-checkout-shipping-address-summary',
   templateUrl: './shipping-address-summary.component.html',
   styleUrls: ['./shipping-address-summary.component.scss'],
-  standalone: true,
   imports: [
     DemoGeographyAddressSummaryComponent,
   ],

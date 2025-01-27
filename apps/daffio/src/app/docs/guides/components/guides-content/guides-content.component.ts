@@ -17,7 +17,6 @@ import { DaffioDocsDynamicContent } from '../../../dynamic-content/dynamic-conte
   selector: 'daffio-docs-guides-content',
   templateUrl: './guides-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffioDocArticleModule,
     DaffioSafeHtmlPipe,

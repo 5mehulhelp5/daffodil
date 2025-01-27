@@ -13,7 +13,6 @@ import { DaffBreadcrumbItemDirective } from './breadcrumb-item.directive';
 
 @Component({
   template: `<li daffBreadcrumbItem [active]="active">Breadcrumb Item</li>`,
-  standalone: true,
   imports: [
     DaffBreadcrumbItemDirective,
   ],

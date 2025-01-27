@@ -9,6 +9,7 @@ import { DaffCart } from '@daffodil/cart';
   selector: 'demo-cart-sidebar',
   templateUrl: './cart-sidebar.component.html',
   styleUrls: ['./cart-sidebar.component.scss'],
+  standalone: false,
 })
 export class CartSidebarComponent {
 

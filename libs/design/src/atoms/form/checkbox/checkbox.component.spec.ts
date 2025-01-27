@@ -17,6 +17,7 @@ import { DaffCheckboxModule } from './checkbox.module';
   template: `
     <daff-checkbox value="testValue"></daff-checkbox>
   `,
+  standalone: false,
 })
 class CheckboxWrapperComponent { }
 
@@ -29,6 +30,7 @@ class CheckboxWrapperComponent { }
   <daff-checkbox value="pickle">Peach</daff-checkbox>
 </daff-checkbox-set>
   `,
+  standalone: false,
 })
 class CheckboxEmbeddedComponent {}
 

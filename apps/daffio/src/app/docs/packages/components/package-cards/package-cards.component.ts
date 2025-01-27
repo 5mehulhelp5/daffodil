@@ -15,6 +15,7 @@ export interface DaffioPackage {
   templateUrl: './package-cards.component.html',
   styleUrls: ['./package-cards.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioDocsPackageCardsComponent {
 

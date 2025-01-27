@@ -17,7 +17,6 @@ import { DAFF_IMAGE_COMPONENTS } from '@daffodil/design/image';
   templateUrl: './stroked-card.component.html',
   styleUrls: ['./stroked-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CARD_COMPONENTS,
     DAFF_IMAGE_COMPONENTS,

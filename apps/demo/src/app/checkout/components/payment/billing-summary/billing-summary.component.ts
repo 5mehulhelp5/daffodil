@@ -12,7 +12,6 @@ import { DemoGeographyAddressSummaryComponent } from '../../../../geography/comp
   selector: 'demo-checkout-billing-summary',
   templateUrl: './billing-summary.component.html',
   styleUrls: ['./billing-summary.component.scss'],
-  standalone: true,
   imports: [
     DemoGeographyAddressSummaryComponent,
   ],

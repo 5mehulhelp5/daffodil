@@ -23,7 +23,6 @@ import { DAFF_NOTIFICATION_COMPONENTS } from '@daffodil/design/notification';
   templateUrl: './notification-status.component.html',
   styleUrls: ['./notification-status.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_NOTIFICATION_COMPONENTS,
     NgIf,

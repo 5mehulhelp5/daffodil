@@ -12,7 +12,6 @@ import { DAFF_TABS_COMPONENTS } from '@daffodil/design/tabs';
   selector: 'basic-tabs',
   templateUrl: './basic-tabs.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_TABS_COMPONENTS,
     FaIconComponent,

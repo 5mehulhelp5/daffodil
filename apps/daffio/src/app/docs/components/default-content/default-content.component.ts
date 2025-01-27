@@ -14,7 +14,6 @@ import { DaffioDocArticleModule } from '../doc-article/module';
   selector: 'daffio-doc-default-content',
   templateUrl: './default-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffioDocArticleModule,
     DaffioSafeHtmlPipe,

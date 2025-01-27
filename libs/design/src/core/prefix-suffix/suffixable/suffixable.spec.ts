@@ -18,6 +18,7 @@ const _suffixableComponentBase = daffSuffixableMixin(SuffixableComponentBase);
 @Component({
   selector: 'daff-suffixable',
   template: '<ng-content></ng-content>',
+  standalone: false,
 })
 class SuffixableComponent extends _suffixableComponentBase {
   constructor() {
@@ -27,6 +28,7 @@ class SuffixableComponent extends _suffixableComponentBase {
 
 @Component({
   template: '<daff-suffixable><div daffSuffix></div></daff-suffixable>',
+  standalone: false,
 })
 class WrapperComponent {}
 

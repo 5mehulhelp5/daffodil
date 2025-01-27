@@ -19,7 +19,6 @@ import { DAFF_HERO_COMPONENTS } from '@daffodil/design/hero';
   templateUrl: './hero-theming.component.html',
   styleUrls: ['./hero-theming.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_HERO_COMPONENTS,
     FaIconComponent,

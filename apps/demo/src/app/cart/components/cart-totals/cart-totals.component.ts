@@ -13,6 +13,7 @@ import {
   selector: 'demo-cart-totals',
   templateUrl: './cart-totals.component.html',
   styleUrls: ['./cart-totals.component.scss'],
+  standalone: false,
 })
 export class CartTotalsComponent {
   @Input() cart: DaffCart;

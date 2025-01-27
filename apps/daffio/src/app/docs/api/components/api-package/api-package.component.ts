@@ -21,7 +21,6 @@ import { DaffioApiListSectionComponent } from '../api-list-section/api-list-sect
     directive: DaffArticleEncapsulatedDirective,
   }],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     RouterLink,
     DaffioApiListSectionComponent,

@@ -10,6 +10,7 @@ import {
  */
 @Directive({
   selector: '[daffSuffix]',
+  standalone: false,
 })
 
 export class DaffSuffixDirective {

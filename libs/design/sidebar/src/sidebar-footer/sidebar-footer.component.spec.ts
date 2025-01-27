@@ -13,7 +13,6 @@ import { DaffSidebarFooterComponent } from './sidebar-footer.component';
 
 @Component({
   template: `<daff-sidebar-footer>Footer</daff-sidebar-footer>`,
-  standalone: true,
   imports: [
     DaffSidebarFooterComponent,
   ],

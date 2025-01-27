@@ -13,7 +13,6 @@ import { DAFF_BUTTON_COMPONENTS } from '@daffodil/design/button';
   templateUrl: './sizeable-button.component.html',
   styleUrls: ['./sizeable-button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_BUTTON_COMPONENTS,
     FaIconComponent,

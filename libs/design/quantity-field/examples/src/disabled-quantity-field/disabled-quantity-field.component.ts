@@ -18,7 +18,6 @@ import {
   templateUrl: './disabled-quantity-field.component.html',
   styleUrls: ['./disabled-quantity-field.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffFormFieldModule,
     DaffQuantityFieldModule,

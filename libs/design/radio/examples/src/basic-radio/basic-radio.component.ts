@@ -15,7 +15,6 @@ import { DaffRadioModule } from '@daffodil/design';
   selector: 'basic-radio',
   templateUrl: './basic-radio.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [DaffRadioModule, ReactiveFormsModule],
 })
 export class BasicRadioComponent {

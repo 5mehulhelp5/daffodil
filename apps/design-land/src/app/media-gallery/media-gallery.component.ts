@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-media-gallery',
   templateUrl: './media-gallery.component.html',
   styleUrls: ['./media-gallery.component.scss'],
+  standalone: false,
 })
 export class DesignLandMediaGalleryComponent {}

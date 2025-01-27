@@ -16,7 +16,6 @@ import { DaffFlatButtonComponent } from './flat.component';
     <a daff-flat-button>Flat Link Button</a>
     <button daff-flat-button>Flat Button</button>
   `,
-  standalone: true,
   imports: [
     DaffFlatButtonComponent,
   ],

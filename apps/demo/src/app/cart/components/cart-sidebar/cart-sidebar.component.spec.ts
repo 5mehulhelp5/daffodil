@@ -16,7 +16,10 @@ import { DaffCartFactory } from '@daffodil/cart/testing';
 
 import { CartSidebarComponent } from './cart-sidebar.component';
 
-@Component({ template: '<demo-cart-sidebar [cart]="cartValue" [isCartEmpty]="isCartEmptyValue"></demo-cart-sidebar>' })
+@Component({
+  template: '<demo-cart-sidebar [cart]="cartValue" [isCartEmpty]="isCartEmptyValue"></demo-cart-sidebar>',
+  standalone: false,
+})
 class WrapperComponent {
   cartValue: DaffCart;
   isCartEmptyValue: boolean;
@@ -25,6 +28,7 @@ class WrapperComponent {
 @Component({
   selector: 'demo-cart-totals',
   template: '',
+  standalone: false,
 })
 class MockCartTotalsComponent {
   @Input() cart: DaffCart;
@@ -33,11 +37,13 @@ class MockCartTotalsComponent {
 @Component({
   selector: 'demo-help-box',
   template: '',
+  standalone: false,
 })
 class MockHelpBoxComponent { }
 
 @Directive({
   selector: '[demoProceedToCheckout]',
+  standalone: false,
 })
 class MockProceedToCheckoutDirective { }
 

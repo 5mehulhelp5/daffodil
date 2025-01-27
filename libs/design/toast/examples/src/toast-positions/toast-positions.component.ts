@@ -23,7 +23,6 @@ import {
   templateUrl: './toast-positions.component.html',
   styleUrls: ['./toast-positions.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     ReactiveFormsModule,
     DaffButtonComponent,

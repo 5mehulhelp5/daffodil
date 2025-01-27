@@ -15,7 +15,6 @@ import { DAFF_CONTAINER_COMPONENTS } from '@daffodil/design/container';
   selector: 'container-sizes',
   templateUrl: './container-sizes.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CONTAINER_COMPONENTS,
     ReactiveFormsModule,

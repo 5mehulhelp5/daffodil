@@ -24,6 +24,7 @@ import { DaffRadioModule } from '../radio.module';
   <daff-radio formControlName='fruit' value='peach'>Peach</daff-radio>
 </daff-radio-set>
   `,
+  standalone: false,
 })
 class RadioEmbeddedComponent {
   radioGroup = new UntypedFormGroup({

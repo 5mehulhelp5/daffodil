@@ -21,6 +21,7 @@ import { DaffioApiListComponent } from '../../components/api-list/api-list.compo
 @Component({
   template: '',
   selector: 'daffio-api-list',
+  standalone: false,
 })
 class MockDaffioApiListComponent {
   @Input() apiList: DaffDocsApiNavList[] = [];

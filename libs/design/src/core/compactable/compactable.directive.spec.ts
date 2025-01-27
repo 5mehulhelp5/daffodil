@@ -14,6 +14,7 @@ import { DaffCompactableDirective } from './compactable.directive';
 @Component({
   template: `
 		<div daffCompactable [compact]="compact"></div>`,
+  standalone: false,
 })
 
 class WrapperComponent {

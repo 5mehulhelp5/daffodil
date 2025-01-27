@@ -13,7 +13,6 @@ import { DaffCardImageDirective } from './card-image.directive';
 
 @Component({
   template: `<img src="/" daffCardImage />`,
-  standalone: true,
   imports: [
     DaffCardImageDirective,
   ],

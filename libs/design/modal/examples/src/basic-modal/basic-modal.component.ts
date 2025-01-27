@@ -17,7 +17,6 @@ import { BasicModalContentComponent } from './modal-content.component';
   selector: 'basic-modal',
   templateUrl: './basic-modal.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffButtonComponent,
     DAFF_MODAL_COMPONENTS,

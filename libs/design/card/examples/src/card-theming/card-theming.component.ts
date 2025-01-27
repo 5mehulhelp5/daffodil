@@ -20,7 +20,6 @@ import { DAFF_CARD_COMPONENTS } from '@daffodil/design/card';
     }
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CARD_COMPONENTS,
     ReactiveFormsModule,

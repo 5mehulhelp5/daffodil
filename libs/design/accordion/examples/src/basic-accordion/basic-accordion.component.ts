@@ -10,7 +10,6 @@ import { DAFF_ACCORDION_COMPONENTS } from '@daffodil/design/accordion';
   selector: 'basic-accordion',
   templateUrl: './basic-accordion.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_ACCORDION_COMPONENTS,
   ],

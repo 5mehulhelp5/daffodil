@@ -18,7 +18,6 @@ import {
   templateUrl: './select-max-quantity-field.component.html',
   styleUrls: ['./select-max-quantity-field.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffFormFieldModule,
     DaffQuantityFieldModule,

@@ -13,6 +13,7 @@ import { DaffioHomeHeroComponent } from './home-hero.component';
 
 @Component({
   template: `<daffio-home-hero></daffio-home-hero>`,
+  standalone: false,
 })
 class WrapperComponent {}
 

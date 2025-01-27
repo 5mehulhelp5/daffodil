@@ -34,7 +34,6 @@ export const clamp = (number: number, min: number, max: number) => Math.min(Math
   animations: [
     daffProgressBarAnimation.fill,
   ],
-  standalone: true,
   imports: [
     NgIf,
   ],

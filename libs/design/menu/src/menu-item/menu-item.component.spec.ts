@@ -16,7 +16,6 @@ import { DaffMenuItemComponent } from './menu-item.component';
     <a href="/test" daff-menu-item>Test 1</a>
     <button daff-menu-item>Test 2</button>
   `,
-  standalone: true,
   imports: [
     DaffMenuItemComponent,
   ],

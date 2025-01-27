@@ -14,6 +14,7 @@ import { DaffioWhyPwaExamplesComponent } from './why-pwa-examples.component';
 
 @Component({
   template: `<daffio-why-pwa-examples></daffio-why-pwa-examples>`,
+  standalone: false,
 })
 class WrapperComponent {}
 

@@ -20,6 +20,7 @@ function getPath(doc: DaffDocsNavList): string {
   selector: 'daffio-docs-package-cards-container',
   templateUrl: './package-cards.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioDocsPackageCardsContainer {
   packagesList$: Observable<Array<DaffioPackage>> = useDaffioNavList().list.pipe(

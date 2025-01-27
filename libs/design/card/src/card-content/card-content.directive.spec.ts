@@ -13,7 +13,6 @@ import { DaffCardContentDirective } from './card-content.directive';
 
 @Component({
   template: `<div daffCardContent></div>`,
-  standalone: true,
   imports: [
     DaffCardContentDirective,
   ],

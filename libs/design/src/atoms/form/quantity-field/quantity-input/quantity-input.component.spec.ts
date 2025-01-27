@@ -32,6 +32,7 @@ import {
       [max]="maxValue"
     ></daff-quantity-input>
   `,
+  standalone: false,
 })
 class WrapperComponent {
   minValue = 0;

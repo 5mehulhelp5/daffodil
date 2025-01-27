@@ -17,7 +17,6 @@ import { DAFF_BUTTON_COMPONENTS } from '@daffodil/design/button';
   templateUrl: './statusable-button.component.html',
   styleUrls: ['./statusable-button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_BUTTON_COMPONENTS,
     FaIconComponent,

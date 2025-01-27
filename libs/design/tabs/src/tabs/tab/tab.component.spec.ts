@@ -15,7 +15,6 @@ import { DaffTabComponent } from './tab.component';
   template: `
 		<daff-tab [disabled]="disabled"></daff-tab>
 	`,
-  standalone: true,
   imports: [
     DaffTabComponent,
   ],
@@ -65,7 +64,6 @@ describe('@daffodil/design/tabs | DaffTabComponent | Defaults', () => {
   template: `
 		<daff-tab [id]="id"></daff-tab>
 	`,
-  standalone: true,
   imports: [
     DaffTabComponent,
   ],

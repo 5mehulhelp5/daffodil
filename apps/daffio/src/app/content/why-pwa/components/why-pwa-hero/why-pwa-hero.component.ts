@@ -9,6 +9,7 @@ import {
   templateUrl: './why-pwa-hero.component.html',
   styleUrls: ['./why-pwa-hero.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 
 export class DaffioWhyPwaHeroComponent {

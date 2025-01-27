@@ -15,7 +15,6 @@ import { DaffArticleMetaDirective } from './article-meta.directive';
   template: `
     <h3 daffArticleMeta>Lorem Ipsum</h3>
   `,
-  standalone: true,
   imports: [
     DaffArticleMetaDirective,
   ],

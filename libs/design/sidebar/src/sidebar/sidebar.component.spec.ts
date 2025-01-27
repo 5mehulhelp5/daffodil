@@ -69,7 +69,6 @@ describe('@daffodil/design/sidebar | DaffSidebarComponent', () => {
       <daff-sidebar [mode]="mode" [side]="side"></daff-sidebar>
     </div>
   `,
-  standalone: true,
   imports: [
     DaffSidebarComponent,
   ],
@@ -131,7 +130,6 @@ describe('DaffSidebarComponent | Defaults', () => {
       <daff-sidebar (escapePressed)="pressed()" [mode]="mode" [side]="side" [open]="open"></daff-sidebar>
     </div>
   `,
-  standalone: true,
   imports: [
     DaffSidebarComponent,
   ],

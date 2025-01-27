@@ -13,7 +13,6 @@ import {
   selector: 'input-disabled',
   templateUrl: './input-disabled.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [DaffFormFieldModule, DaffInputModule],
 })
 export class InputDisabledComponent {

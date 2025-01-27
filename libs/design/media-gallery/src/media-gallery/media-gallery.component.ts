@@ -36,7 +36,6 @@ let uniqueGalleryId = 0;
       inputs: ['skeleton'],
     },
   ],
-  standalone: true,
   imports: [
     DaffMediaRendererComponent,
     DaffThumbnailDirective,

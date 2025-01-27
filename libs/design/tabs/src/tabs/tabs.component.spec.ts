@@ -57,7 +57,6 @@ import { DAFF_TABS_COMPONENTS } from '../tabs';
       </daff-tab>
     </daff-tabs>
   `,
-  standalone: true,
   imports: [
     DAFF_TABS_COMPONENTS,
   ],

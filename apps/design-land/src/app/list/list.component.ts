@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
+  standalone: false,
 })
 export class DesignLandListComponent {}

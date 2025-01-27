@@ -11,6 +11,7 @@ import { DaffDocTableOfContents } from '@daffodil/docs-utils';
   templateUrl: './table-of-contents.component.html',
   styleUrls: ['table-of-contents.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioDocsTableOfContentsComponent {
   /**

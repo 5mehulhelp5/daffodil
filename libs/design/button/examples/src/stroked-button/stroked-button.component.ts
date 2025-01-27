@@ -22,7 +22,6 @@ import { DaffStrokedButtonComponent } from '@daffodil/design/button';
     }
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffStrokedButtonComponent,
     FaIconComponent,

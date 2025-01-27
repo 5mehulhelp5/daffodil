@@ -28,6 +28,7 @@ import * as fromDemoAddToCartNotification from '../../reducers/index';
   selector: 'demo-add-to-cart-notification',
   templateUrl: './add-to-cart-notification.component.html',
   styleUrls: ['./add-to-cart-notification.component.scss'],
+  standalone: false,
 })
 export class AddToCartNotificationComponent implements OnInit {
   faCheck = faCheck;

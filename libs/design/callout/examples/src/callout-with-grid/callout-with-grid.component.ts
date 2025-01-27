@@ -18,7 +18,6 @@ import { DAFF_CONTAINER_COMPONENTS } from '@daffodil/design/container';
   templateUrl: './callout-with-grid.component.html',
   styleUrls: ['./callout-with-grid.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CALLOUT_COMPONENTS,
     DAFF_CONTAINER_COMPONENTS,

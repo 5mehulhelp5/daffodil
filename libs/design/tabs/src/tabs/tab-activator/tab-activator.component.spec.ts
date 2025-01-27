@@ -16,7 +16,6 @@ import { DaffTabActivatorComponent } from './tab-activator.component';
 		<button daff-tab-activator [selected]="selected" [tabActivatorId]="tabActivatorId" [panelId]="panelId">Tab Activator</button>
 		<a daff-tab-activator [selected]="selected" [tabActivatorId]="tabActivatorId" [panelId]="panelId">Tab Activator</a>
 	`,
-  standalone: true,
   imports: [
     DaffTabActivatorComponent,
   ],

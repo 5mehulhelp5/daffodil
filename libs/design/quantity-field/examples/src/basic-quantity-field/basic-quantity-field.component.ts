@@ -18,7 +18,6 @@ import {
   templateUrl: './basic-quantity-field.component.html',
   styleUrls: ['./basic-quantity-field.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffFormFieldModule,
     DaffQuantityFieldModule,

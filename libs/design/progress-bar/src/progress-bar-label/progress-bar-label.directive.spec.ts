@@ -13,7 +13,6 @@ import { DaffProgressBarLabelDirective } from './progress-bar-label.directive';
 
 @Component({
   template: `<label daffProgressBarLabel>Label</label>`,
-  standalone: true,
   imports: [
     DaffProgressBarLabelDirective,
   ],

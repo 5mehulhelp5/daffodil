@@ -19,7 +19,6 @@ import { DaffioApiPackageComponent } from '../api-package/api-package.component'
   selector: 'daffio-docs-api-content',
   templateUrl: './api-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffioDocArticleModule,
     DaffioApiPackageComponent,

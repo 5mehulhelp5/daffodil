@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-typography',
   templateUrl: './typography.component.html',
   styleUrls: ['./typography.component.scss'],
+  standalone: false,
 })
 export class DesignLandTypographyComponent {}

@@ -17,6 +17,7 @@ import { DaffOpenableDirective } from './openable.directive';
 			(toggled)="toggledFunction($event)"
       [open]="open">
 		</div>`,
+  standalone: false,
 })
 
 class WrapperComponent {

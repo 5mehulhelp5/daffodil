@@ -15,7 +15,6 @@ import { DaffCalloutTitleDirective } from './callout-title.directive';
   template: `
     <h3 daffCalloutTitle>Lorem Ipsum</h3>
   `,
-  standalone: true,
   imports: [
     DaffCalloutTitleDirective,
   ],

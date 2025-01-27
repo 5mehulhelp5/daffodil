@@ -26,7 +26,6 @@ import {
  * ```
  */
 @Component({
-  standalone: true,
   selector: 'daff-tab-label',
   templateUrl: './tab-label.component.html',
   styleUrl: './tab-label.component.scss',

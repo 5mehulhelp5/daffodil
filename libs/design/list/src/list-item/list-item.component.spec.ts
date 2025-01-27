@@ -16,7 +16,6 @@ import { DaffListItemComponent } from './list-item.component';
     <daff-list-item>List Item</daff-list-item>
     <a daff-list-item>List Item</a>
   `,
-  standalone: true,
   imports: [
     DaffListItemComponent,
   ],

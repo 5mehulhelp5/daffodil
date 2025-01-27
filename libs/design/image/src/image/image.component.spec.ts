@@ -13,7 +13,6 @@ import { DaffImageComponent } from './image.component';
 
 @Component({
   template: `<daff-image [src]="src" [alt]="alt" [width]="width" [height]="height" [skeleton]="skeleton"></daff-image>`,
-  standalone: true,
   imports: [
     DaffImageComponent,
   ],

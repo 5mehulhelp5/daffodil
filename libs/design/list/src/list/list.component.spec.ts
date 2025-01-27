@@ -16,7 +16,6 @@ import { DaffListComponent } from './list.component';
     <daff-list [mode]="mode"></daff-list>
     <daff-nav-list></daff-nav-list>
   `,
-  standalone: true,
   imports: [
     DaffListComponent,
   ],

@@ -15,7 +15,6 @@ import { DaffNotificationTitleDirective } from './notification-title.directive';
   template: `
     <h3 daffNotificationTitle>Title</h3>
   `,
-  standalone: true,
   imports: [
     DaffNotificationTitleDirective,
   ],

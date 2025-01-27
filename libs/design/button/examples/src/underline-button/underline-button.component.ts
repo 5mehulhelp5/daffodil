@@ -22,7 +22,6 @@ import { DaffUnderlineButtonComponent } from '@daffodil/design/button';
     }
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffUnderlineButtonComponent,
     FaIconComponent,

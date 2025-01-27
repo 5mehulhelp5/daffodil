@@ -16,6 +16,7 @@ import { DaffSkeletonableDirective } from './skeletonable.directive';
 		<div daffSkeletonable
 			[skeleton]="skeleton">
 		</div>`,
+  standalone: false,
 })
 
 class WrapperComponent {

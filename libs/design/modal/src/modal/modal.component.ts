@@ -43,7 +43,6 @@ import { DaffModalService } from '../service/modal.service';
   animations: [daffFadeAnimations.fade],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
-  standalone: true,
   imports: [
     PortalModule,
     OverlayModule,

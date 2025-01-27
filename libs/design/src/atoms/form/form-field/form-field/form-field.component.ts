@@ -20,6 +20,7 @@ import { DaffFormFieldMissingControlMessage } from '../form-field-errors';
   templateUrl: './form-field.component.html',
   styleUrls: ['./form-field.component.scss'],
   encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class DaffFormFieldComponent implements DoCheck, AfterContentInit, AfterContentChecked {
 

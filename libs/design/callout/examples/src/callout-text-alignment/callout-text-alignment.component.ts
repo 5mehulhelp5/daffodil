@@ -20,7 +20,6 @@ import { DAFF_CONTAINER_COMPONENTS } from '@daffodil/design/container';
   templateUrl: './callout-text-alignment.component.html',
   styleUrls: ['./callout-text-alignment.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CALLOUT_COMPONENTS,
     DAFF_CONTAINER_COMPONENTS,

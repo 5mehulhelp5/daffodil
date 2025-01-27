@@ -13,7 +13,6 @@ import { DaffLinkSetComponent } from './link-set.component';
 
 @Component ({
   template: `<daff-link-set></daff-link-set>`,
-  standalone: true,
   imports: [
     DaffLinkSetComponent,
   ],

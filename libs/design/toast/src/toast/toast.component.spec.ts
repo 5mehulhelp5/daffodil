@@ -22,7 +22,6 @@ import { DaffToast } from '../interfaces/toast';
       [toast]="toast"
     ></daff-toast>
   `,
-  standalone: true,
   imports: [
     DaffToastComponent,
   ],

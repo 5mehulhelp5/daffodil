@@ -80,7 +80,6 @@ import { DaffSidebarViewportBackdropComponent } from '../sidebar-viewport-backdr
       useFactory: daffSidebarViewportScrollFactory,
     },
   ],
-  standalone: true,
   imports: [
     DaffSidebarViewportBackdropComponent,
   ],

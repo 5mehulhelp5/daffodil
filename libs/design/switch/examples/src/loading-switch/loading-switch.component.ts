@@ -10,7 +10,6 @@ import { DAFF_SWITCH_COMPONENTS } from '@daffodil/design/switch';
   selector: 'loading-switch',
   templateUrl: './loading-switch.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_SWITCH_COMPONENTS,
   ],

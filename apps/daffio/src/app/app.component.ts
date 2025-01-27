@@ -7,6 +7,7 @@ import {
   selector: 'daffio-app-root',
   templateUrl: './app.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 
 export class DaffioAppComponent {

@@ -15,7 +15,6 @@ import { DaffNotificationMessageDirective } from './notification-message.directi
   template: `
     <h3 daffNotificationMessage>Lorem Ipsum</h3>
   `,
-  standalone: true,
   imports: [
     DaffNotificationMessageDirective,
   ],

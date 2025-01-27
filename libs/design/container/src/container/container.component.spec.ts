@@ -15,7 +15,6 @@ import { DaffContainerComponent } from './container.component';
 
 @Component({
   template: `<daff-container [size]="size"></daff-container>`,
-  standalone: true,
   imports: [
     DaffContainerComponent,
   ],

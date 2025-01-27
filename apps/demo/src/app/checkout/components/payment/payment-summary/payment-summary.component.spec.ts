@@ -16,7 +16,6 @@ import { DemoCheckoutPaymentSummaryComponent } from './payment-summary.component
     [paymentInfo]="paymentInfoValue"
     (editPaymentInfo)="editPaymentInfoFunction()"
   ></demo-checkout-payment-summary>`,
-  standalone: true,
   imports: [
     DemoCheckoutPaymentSummaryComponent,
   ],

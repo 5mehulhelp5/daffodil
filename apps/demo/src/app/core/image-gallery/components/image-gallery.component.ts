@@ -25,6 +25,7 @@ import * as fromDemoImageGallery from '../reducers/index';
       provide: daffThumbnailCompatToken, useFactory: () => ImageGalleryComponent,
     },
   ],
+  standalone: false,
 })
 export class ImageGalleryComponent implements OnInit {
 

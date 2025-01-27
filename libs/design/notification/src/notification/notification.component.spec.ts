@@ -25,7 +25,6 @@ import {
       (closeNotification)="closeNotificationFunction()">
     </daff-notification>
   `,
-  standalone: true,
   imports: [
     DaffNotificationComponent,
   ],

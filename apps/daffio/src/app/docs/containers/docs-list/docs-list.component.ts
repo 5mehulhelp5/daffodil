@@ -11,7 +11,6 @@ import { useDaffioNavList } from '../../composables/nav-index';
   selector: 'daffio-docs-list-container',
   templateUrl: './docs-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     AsyncPipe,
     DaffioDocsListComponent,

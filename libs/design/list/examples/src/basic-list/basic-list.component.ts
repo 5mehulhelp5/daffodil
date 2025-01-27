@@ -10,7 +10,6 @@ import { DAFF_LIST_COMPONENTS } from '@daffodil/design/list';
   selector: 'basic-list',
   templateUrl: './basic-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_LIST_COMPONENTS,
   ],

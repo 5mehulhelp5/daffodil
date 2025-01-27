@@ -15,7 +15,6 @@ import {
   templateUrl: './toast-with-custom-duration.component.html',
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffButtonComponent,
   ],

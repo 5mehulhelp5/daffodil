@@ -19,7 +19,6 @@ import { DaffSidebarComponent } from '../../sidebar/sidebar.component';
   template: `
     <daff-sidebar *ngFor="let sidebar of sidebars" [side]="sidebar.side" [mode]="sidebar.mode" [open]="sidebar.open"></daff-sidebar>
   `,
-  standalone: true,
   imports: [
     NgFor,
     DaffSidebarComponent,

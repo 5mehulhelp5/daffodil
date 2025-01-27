@@ -13,6 +13,7 @@ import {
   templateUrl: './why-pwa-stats.component.html',
   styleUrls: ['./why-pwa-stats.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 
 export class DaffioWhyPwaStatsComponent {

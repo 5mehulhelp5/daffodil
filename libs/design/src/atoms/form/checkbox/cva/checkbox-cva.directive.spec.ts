@@ -17,6 +17,7 @@ import { DaffCheckboxModule } from '../checkbox.module';
   template: `
     <daff-checkbox name='test' value='testValue' [formControl]='checkbox'></daff-checkbox>
   `,
+  standalone: false,
 })
 class CheckboxWrapperComponent {
   checkbox = new UntypedFormControl();

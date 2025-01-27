@@ -23,7 +23,6 @@ import { DaffSidebarViewportBackdropComponent } from '../sidebar-viewport-backdr
       <daff-sidebar-viewport (backdropClicked)="incrementBackdropClicked()" [navPlacement]="navPlacement">
       </daff-sidebar-viewport>
     </div>`,
-  standalone: true,
   imports: [
     DaffSidebarViewportComponent,
     DaffSidebarComponent,

@@ -30,7 +30,6 @@ const currentYear = new Date().getFullYear();
   selector: 'demo-payment-info-form',
   templateUrl: './payment-info-form.component.html',
   styleUrls: ['./payment-info-form.component.scss'],
-  standalone: true,
   imports: [
     CommonModule,
     ReactiveFormsModule,

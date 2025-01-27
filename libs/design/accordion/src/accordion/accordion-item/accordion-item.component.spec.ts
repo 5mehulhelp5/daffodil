@@ -56,7 +56,6 @@ describe('@daffodil/design/accordion | DaffAccordionItemComponent | Defaults', (
       <div>no content</div>
     </daff-accordion-item>
     `,
-  standalone: true,
   imports: [
     DaffAccordionItemComponent,
   ],

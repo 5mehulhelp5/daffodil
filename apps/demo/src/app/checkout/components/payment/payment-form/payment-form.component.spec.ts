@@ -30,7 +30,6 @@ import { PaymentInfoFormFactory } from '../payment-info-form/factories/payment-i
       (submitted)="submittedFunction($event)"
     ></demo-checkout-payment-form>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutPaymentFormComponent,
   ],

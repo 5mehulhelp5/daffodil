@@ -13,7 +13,6 @@ import { DaffHeroIconDirective } from './hero-icon.directive';
 
 @Component({
   template: `<div daffHeroIcon>Hero Icon</div>`,
-  standalone: true,
   imports: [
     DaffHeroIconDirective,
   ],

@@ -10,7 +10,6 @@ import { DAFF_PAGINATOR_COMPONENTS } from '@daffodil/design/paginator';
   selector: 'basic-paginator',
   templateUrl: './basic-paginator.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_PAGINATOR_COMPONENTS,
   ],

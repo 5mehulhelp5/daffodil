@@ -13,7 +13,6 @@ import { DaffioNavLink } from '../link/type';
 
 @Component({
   template: '<daffio-nav-header-container></daffio-nav-header-container>',
-  standalone: true,
   imports: [
     DaffioNavSidebarBodyComponent,
   ],

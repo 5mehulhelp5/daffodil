@@ -19,7 +19,6 @@ import { DaffModalService } from '../service/modal.service';
       <daff-modal [open]="open"></daff-modal>
     </div>
   `,
-  standalone: true,
   imports: [
     DaffModalComponent,
   ],

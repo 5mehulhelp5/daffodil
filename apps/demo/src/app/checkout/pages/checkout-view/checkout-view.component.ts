@@ -47,24 +47,19 @@ import {
 @Component({
   templateUrl: './checkout-view.component.html',
   styleUrls: ['./checkout-view.component.scss'],
-  standalone: true,
   imports: [
     CommonModule,
     LetDirective,
     DAFF_CONTAINER_COMPONENTS,
     DAFF_LOADING_ICON_COMPONENTS,
     DAFF_ACCORDION_COMPONENTS,
-
     DemoCheckoutShippingAddressFormComponent,
     DemoCheckoutShippingAddressSummaryComponent,
-
     DemoCheckoutShippingFormComponent,
     DemoCheckoutShippingSummaryComponent,
-
     DemoCheckoutPaymentFormComponent,
     DemoCheckoutBillingAddressSummaryComponent,
     DemoCheckoutPaymentSummaryComponent,
-
     PlaceOrderModule,
     CartSummaryWrapperModule,
   ],

@@ -24,6 +24,7 @@ import { DemoCartViewComponent } from './cart-view.component';
 @Component({
   selector: 'demo-cart',
   template: '',
+  standalone: false,
 })
 class MockCartWrapperComponent {
   @Input() cart: DaffCart;

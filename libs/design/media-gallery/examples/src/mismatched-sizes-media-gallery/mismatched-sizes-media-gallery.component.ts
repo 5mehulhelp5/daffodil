@@ -11,7 +11,6 @@ import { DAFF_MEDIA_GALLERY_COMPONENTS } from '@daffodil/design/media-gallery';
   selector: 'mismatched-sizes-media-gallery',
   templateUrl: './mismatched-sizes-media-gallery.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_MEDIA_GALLERY_COMPONENTS,
     DAFF_IMAGE_COMPONENTS,

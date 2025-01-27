@@ -10,7 +10,6 @@ import { DAFF_SWITCH_COMPONENTS } from '@daffodil/design/switch';
   selector: 'disabled-switch',
   templateUrl: './disabled-switch.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_SWITCH_COMPONENTS,
   ],

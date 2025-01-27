@@ -13,7 +13,6 @@ import { DaffCardTitleDirective } from './card-title.directive';
 
 @Component({
   template: `<div daffCardTitle></div>`,
-  standalone: true,
   imports: [
     DaffCardTitleDirective,
   ],

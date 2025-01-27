@@ -13,6 +13,7 @@ import { DaffTreeData } from '@daffodil/design/tree';
   selector: 'design-land-nav',
   templateUrl: './nav.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DesignLandNavComponent implements OnInit {
   tree$: Observable<DaffTreeData<unknown>>;

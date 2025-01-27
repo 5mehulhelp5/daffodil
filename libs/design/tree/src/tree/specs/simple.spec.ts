@@ -15,7 +15,6 @@ import { DaffTreeComponent } from '../tree.component';
   template: `
     <ul daff-tree [tree]="data"></ul>
   `,
-  standalone: true,
   imports: [
     DaffTreeComponent,
   ],

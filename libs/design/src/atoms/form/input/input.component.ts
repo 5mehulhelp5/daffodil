@@ -24,6 +24,7 @@ import { DaffFormFieldControl } from '../form-field/form-field-control';
     // eslint-disable-next-line @typescript-eslint/no-use-before-define
     { provide: DaffFormFieldControl, useExisting: DaffInputComponent },
   ],
+  standalone: false,
 })
 export class DaffInputComponent implements DaffFormFieldControl {
 

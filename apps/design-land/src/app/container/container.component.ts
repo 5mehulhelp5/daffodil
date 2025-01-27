@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.scss'],
+  standalone: false,
 })
 export class DesignLandContainerComponent {}

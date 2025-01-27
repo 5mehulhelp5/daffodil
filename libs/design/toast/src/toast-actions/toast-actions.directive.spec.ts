@@ -15,7 +15,6 @@ import { DaffToastActionsDirective } from './toast-actions.directive';
   template: `
     <div daffToastActions><button>Click me!</button></div>
   `,
-  standalone: true,
   imports: [
     DaffToastActionsDirective,
   ],

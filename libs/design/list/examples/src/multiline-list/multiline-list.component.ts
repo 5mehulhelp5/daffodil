@@ -10,7 +10,6 @@ import { DAFF_LIST_COMPONENTS } from '@daffodil/design/list';
   selector: 'multiline-list',
   templateUrl: './multiline-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_LIST_COMPONENTS,
   ],

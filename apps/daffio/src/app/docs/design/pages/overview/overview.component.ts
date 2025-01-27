@@ -13,7 +13,6 @@ import { DAFF_HERO_COMPONENTS } from '@daffodil/design/hero';
   templateUrl: './overview.component.html',
   styleUrls: ['./overview.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CONTAINER_COMPONENTS,
     DaffButtonComponent,

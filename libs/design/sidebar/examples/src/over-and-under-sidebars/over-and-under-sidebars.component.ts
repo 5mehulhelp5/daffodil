@@ -21,7 +21,6 @@ import { DAFF_SIDEBAR_COMPONENTS } from '@daffodil/design/sidebar';
   templateUrl: './over-and-under-sidebars.component.html',
   styleUrls: ['over-and-under-sidebars.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_SIDEBAR_COMPONENTS,
     FaIconComponent,

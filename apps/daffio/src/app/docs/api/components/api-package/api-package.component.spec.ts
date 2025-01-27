@@ -23,7 +23,6 @@ import { DaffioApiListSectionComponent } from '../api-list-section/api-list-sect
   template: `
     <daffio-api-package [doc]="apiListValue"></daffio-api-package>
   `,
-  standalone: true,
   imports: [
     DaffioApiPackageComponent,
   ],

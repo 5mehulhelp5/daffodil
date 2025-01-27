@@ -21,6 +21,7 @@ import {
   selector: 'demo-newsletter',
   templateUrl: './newsletter.component.html',
   styleUrls: ['./newsletter.component.scss'],
+  standalone: false,
 })
 export class NewsletterComponent implements OnInit {
 

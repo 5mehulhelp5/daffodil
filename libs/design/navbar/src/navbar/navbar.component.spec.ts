@@ -15,7 +15,6 @@ import { DaffNavbarComponent } from './navbar.component';
 
 @Component({
   template: '<nav daff-navbar [color]="color" [raised]="raised"></ nav>',
-  standalone: true,
   imports: [
     DaffNavbarComponent,
   ],

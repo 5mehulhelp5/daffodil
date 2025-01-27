@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-image',
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.scss'],
+  standalone: false,
 })
 export class DesignLandImageComponent {}

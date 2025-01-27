@@ -13,7 +13,6 @@ import { DaffCardTaglineDirective } from './card-tagline.directive';
 
 @Component({
   template: `<div daffCardTagline></div>`,
-  standalone: true,
   imports: [
     DaffCardTaglineDirective,
   ],

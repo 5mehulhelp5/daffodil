@@ -36,7 +36,6 @@ let switchUniqueId = 0;
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './switch.component.html',
   styleUrls: ['./switch.component.scss'],
-  standalone: true,
   imports: [
     DAFF_LOADING_ICON_COMPONENTS,
     DaffErrorMessageModule,

@@ -17,6 +17,7 @@ import { DaffSelectableDirective } from './selectable.directive';
       (becameSelected)="becameSelectedFunction($event)"
       [selected]="selected">
 		</div>`,
+  standalone: false,
 })
 
 class WrapperComponent {

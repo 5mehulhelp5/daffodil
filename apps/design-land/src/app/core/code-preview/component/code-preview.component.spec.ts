@@ -13,6 +13,7 @@ import { DesignLandCodePreviewModule } from './code-preview.module';
   template: `
   <design-land-code-preview [example]="exampleComponent"></design-land-code-preview>
   `,
+  standalone: false,
 })
 class WrapperComponent {
   exampleComponent = {

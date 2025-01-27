@@ -12,7 +12,6 @@ import { DAFF_LIST_COMPONENTS } from '@daffodil/design/list';
   selector: 'nav-list',
   templateUrl: './nav-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_LIST_COMPONENTS,
     FaIconComponent,

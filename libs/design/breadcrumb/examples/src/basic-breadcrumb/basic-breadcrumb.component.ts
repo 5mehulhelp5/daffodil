@@ -10,7 +10,6 @@ import { DAFF_BREADCRUMB_COMPONENTS } from '@daffodil/design/breadcrumb';
   selector: 'basic-breadcrumb',
   templateUrl: './basic-breadcrumb.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_BREADCRUMB_COMPONENTS,
   ],

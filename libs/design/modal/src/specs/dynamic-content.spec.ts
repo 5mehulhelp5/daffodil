@@ -26,7 +26,6 @@ class DynamicComponent {}
 
 @Component({
   template: `<daff-modal></daff-modal>`,
-  standalone: true,
   imports: [
     DaffModalComponent,
     PortalModule,

@@ -13,6 +13,7 @@ import { DaffioWhyPwaHeroComponent } from './why-pwa-hero.component';
 
 @Component({
   template: `<daffio-why-pwa-hero></daffio-why-pwa-hero>`,
+  standalone: false,
 })
 class WrapperComponent {}
 

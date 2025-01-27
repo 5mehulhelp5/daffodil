@@ -10,7 +10,6 @@ import { DAFF_ARTICLE_COMPONENTS } from '@daffodil/design/article';
   selector: 'article-code-inline',
   templateUrl: './article-code-inline.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_ARTICLE_COMPONENTS,
   ],

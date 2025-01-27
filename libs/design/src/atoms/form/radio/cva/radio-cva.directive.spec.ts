@@ -19,6 +19,7 @@ import { DaffRadioModule } from '../radio.module';
   template: `
     <daff-radio name='test' value='testValue' [formControl]='radio'></daff-radio>
   `,
+  standalone: false,
 })
 class RadioWrapperComponent {
   radio = new UntypedFormControl();

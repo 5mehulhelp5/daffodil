@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-tree',
   templateUrl: './tree.component.html',
   styleUrls: ['./tree.component.scss'],
+  standalone: false,
 })
 export class DesignLandTreeComponent {}

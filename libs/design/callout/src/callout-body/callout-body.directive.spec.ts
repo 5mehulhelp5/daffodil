@@ -15,7 +15,6 @@ import { DaffCalloutBodyDirective } from './callout-body.directive';
   template: `
     <h3 daffCalloutBody>Lorem Ipsum</h3>
   `,
-  standalone: true,
   imports: [
     DaffCalloutBodyDirective,
   ],

@@ -7,6 +7,7 @@ import {
   selector: 'demo-cart-item-count',
   templateUrl: './cart-item-count.component.html',
   styleUrls: ['./cart-item-count.component.scss'],
+  standalone: false,
 })
 export class CartItemCountComponent {
 

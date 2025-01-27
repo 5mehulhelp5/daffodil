@@ -24,7 +24,10 @@ import {
   DaffPaginatorPageOutOfRangeErrorMessage,
 } from '../utils/paginator-errors';
 
-@Component({ template: '' })
+@Component({
+  template: '',
+  standalone: false,
+})
 class TestComponent {}
 
 @Component({
@@ -37,7 +40,6 @@ class TestComponent {}
       [url]="urlValue"
       [queryParam]="queryParamValue">
     </daff-paginator>`,
-  standalone: true,
   imports: [
     DaffPaginatorComponent,
   ],

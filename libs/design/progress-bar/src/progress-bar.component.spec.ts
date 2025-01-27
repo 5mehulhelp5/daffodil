@@ -21,7 +21,6 @@ import { DaffProgressBarComponent } from './progress-bar.component';
   <daff-progress-bar [color]="color" [percentage]="percentage" (finished)="onAnimationComplete()">
   </daff-progress-bar>
   `,
-  standalone: true,
   imports: [
     DaffProgressBarComponent,
   ],

@@ -13,7 +13,6 @@ import { DaffCardIconDirective } from './card-icon.directive';
 
 @Component({
   template: `<div daffCardIcon></div>`,
-  standalone: true,
   imports: [
     DaffCardIconDirective,
   ],

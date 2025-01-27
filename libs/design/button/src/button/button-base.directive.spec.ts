@@ -21,7 +21,6 @@ import { DaffButtonSize } from './button-sizable.directive';
 @Component({
   template: `
 		<div daffButtonBase [color]="color" [size]="size" [status]="status" [loading]="loading" [tabindex]="tabindex"></div>`,
-  standalone: true,
   imports: [
     DaffButtonBaseDirective,
     DaffLoadingIconComponent,

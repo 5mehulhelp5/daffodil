@@ -15,7 +15,6 @@ import { DaffNotificationSubtitleDirective } from './notification-subtitle.direc
   template: `
     <h3 daffNotificationSubtitle>Subtitle</h3>
   `,
-  standalone: true,
   imports: [
     DaffNotificationSubtitleDirective,
   ],

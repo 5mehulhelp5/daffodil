@@ -14,7 +14,6 @@ import {
   selector: 'basic-tree',
   templateUrl: './basic-tree.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_TREE_COMPONENTS,
     RouterLink,

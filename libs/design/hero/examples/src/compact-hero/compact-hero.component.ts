@@ -14,7 +14,6 @@ import { DAFF_HERO_COMPONENTS } from '@daffodil/design/hero';
   templateUrl: './compact-hero.component.html',
   styleUrls: ['./compact-hero.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     FaIconComponent,
     DAFF_HERO_COMPONENTS,

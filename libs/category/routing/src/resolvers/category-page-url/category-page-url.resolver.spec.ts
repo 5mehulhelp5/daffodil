@@ -53,7 +53,10 @@ import { DaffProductFactory } from '@daffodil/product/testing';
 import { DaffCategoryPageUrlResolver } from './category-page-url.resolver';
 import { DAFF_CATEGORY_ROUTING_OPTIONS_BUILDER } from '../../injection-tokens/request/builder.token';
 
-@Component({ template: '' })
+@Component({
+  template: '',
+  standalone: false,
+})
 class TestComponent {}
 
 describe('DaffCategoryPageUrlResolver', () => {
@@ -137,7 +140,7 @@ describe('DaffCategoryPageUrlResolver', () => {
       it('should dispatch a DaffCategoryPageLoadByUrl action with the currentPage', () => {
         spyOn(store, 'dispatch');
         categoryResolver.resolve(route.snapshot, router.routerState.snapshot);
-        expect(store.dispatch).toHaveBeenCalledWith(
+        expect(<any>store.dispatch).toHaveBeenCalledWith(
           new DaffCategoryPageLoadByUrl({ url: `/${path}`, kind: DaffCategoryRequestKind.URL, currentPage: page }),
         );
       });
@@ -150,7 +153,7 @@ describe('DaffCategoryPageUrlResolver', () => {
 
       spyOn(store, 'dispatch');
       categoryResolver.resolve(route.snapshot, router.routerState.snapshot);
-      expect(store.dispatch).toHaveBeenCalledWith(
+      expect(<any>store.dispatch).toHaveBeenCalledWith(
         new DaffCategoryPageLoadByUrl({ url: `/${path}`, kind: DaffCategoryRequestKind.URL }),
       );
     }));
@@ -257,7 +260,7 @@ describe('DaffCategoryPageUrlResolver', () => {
       it('should dispatch a DaffCategoryPageLoadByUrl action with the currentPage', () => {
         spyOn(store, 'dispatch');
         categoryResolver.resolve(route.snapshot, router.routerState.snapshot);
-        expect(store.dispatch).toHaveBeenCalledWith(
+        expect(<any>store.dispatch).toHaveBeenCalledWith(
           new DaffCategoryPageLoadByUrl({ url: `/${path}`, kind: DaffCategoryRequestKind.URL, currentPage: page }),
         );
       });
@@ -270,7 +273,7 @@ describe('DaffCategoryPageUrlResolver', () => {
 
       spyOn(store, 'dispatch');
       categoryResolver.resolve(route.snapshot, router.routerState.snapshot);
-      expect(store.dispatch).toHaveBeenCalledWith(
+      expect(<any>store.dispatch).toHaveBeenCalledWith(
         new DaffCategoryPageLoadByUrl({ url: `/${path}`, kind: DaffCategoryRequestKind.URL }),
       );
     }));

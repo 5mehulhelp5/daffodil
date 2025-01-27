@@ -22,7 +22,6 @@ import { DAFF_NOTIFICATION_COMPONENTS } from '@daffodil/design/notification';
   templateUrl: './notification-orientations.component.html',
   styleUrls: ['./notification-orientations.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_NOTIFICATION_COMPONENTS,
     FaIconComponent,

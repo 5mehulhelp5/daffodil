@@ -12,6 +12,7 @@ import { DaffDocsApiNavList } from '@daffodil/docs-utils';
   templateUrl: './api-list.component.html',
   styleUrls: ['./api-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioApiListComponent {
   @HostBinding('class.daffio-api-list') class = true;

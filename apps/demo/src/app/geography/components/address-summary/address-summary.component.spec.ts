@@ -13,7 +13,6 @@ import { DemoGeographyAddressSummaryComponent } from './address-summary.componen
 
 @Component({
   template: '<demo-geography-address-summary [address]="addressValue"></demo-geography-address-summary>',
-  standalone: true,
   imports: [
     DemoGeographyAddressSummaryComponent,
   ],

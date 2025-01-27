@@ -15,7 +15,6 @@ import { DaffLoadingIconComponent } from './loading-icon.component';
 
 @Component({
   template: '<daff-loading-icon [color]="color"></daff-loading-icon>',
-  standalone: true,
   imports: [
     DaffLoadingIconComponent,
   ],

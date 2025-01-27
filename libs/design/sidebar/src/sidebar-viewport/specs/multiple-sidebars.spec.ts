@@ -23,7 +23,6 @@ import { DaffSidebarComponent } from '../../sidebar/sidebar.component';
 			<daff-sidebar *ngFor="let sidebar of sidebars" [side]="sidebar[1]" [mode]="sidebar[0]"></daff-sidebar>
 		</daff-sidebar-viewport>
 		`,
-  standalone: true,
   imports: [
     DaffSidebarComponent,
     DaffSidebarViewportComponent,

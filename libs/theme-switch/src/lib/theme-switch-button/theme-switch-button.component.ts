@@ -23,6 +23,7 @@ export const DAFFIO_THEME_SWITCH_TO_DARK_LABEL = 'Enable dark mode';
   selector: 'daff-theme-switch-button',
   templateUrl: './theme-switch-button.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffThemeSwitchButtonComponent implements OnInit {
   theme$: Observable<DaffTheme>;

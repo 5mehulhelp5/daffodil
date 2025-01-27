@@ -16,7 +16,6 @@ import { DaffTabComponent } from '../tab/tab.component';
   template: `
 		<daff-tab-panel></daff-tab-panel>
 	`,
-  standalone: true,
   imports: [
     DaffTabPanelComponent,
   ],

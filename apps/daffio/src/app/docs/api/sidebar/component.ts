@@ -13,7 +13,6 @@ import { DaffioApiNavListComponent } from '../components/nav-list/nav-list.compo
   template: `
     <daffio-api-nav-list [navList]="list$ | async"></daffio-api-nav-list>
   `,
-  standalone: true,
   imports: [
     DaffioApiNavListComponent,
     AsyncPipe,

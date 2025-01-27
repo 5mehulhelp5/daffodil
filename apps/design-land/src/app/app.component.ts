@@ -38,6 +38,7 @@ import { createCustomElementFromExample } from './core/elements/create-element-f
   selector: 'design-land-app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: false,
 })
 export class DesignLandAppComponent {
   constructor(

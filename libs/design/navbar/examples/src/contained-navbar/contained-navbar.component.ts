@@ -13,7 +13,6 @@ import { DAFF_NAVBAR_COMPONENTS } from '@daffodil/design/navbar';
   templateUrl: './contained-navbar.component.html',
   styleUrls: ['./contained-navbar.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_NAVBAR_COMPONENTS,
     DAFF_CONTAINER_COMPONENTS,

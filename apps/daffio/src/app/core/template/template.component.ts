@@ -8,6 +8,7 @@ import { DaffioRouterNamedViewsEnum } from '../router/named-views/models/named-v
 @Component({
   templateUrl: './template.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class TemplateComponent {
   readonly navNamedView = DaffioRouterNamedViewsEnum.NAV;

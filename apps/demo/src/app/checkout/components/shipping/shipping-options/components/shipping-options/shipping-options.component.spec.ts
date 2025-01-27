@@ -20,7 +20,6 @@ import { DemoCheckoutShippingFormGroup } from '../../models/shipping-form.type';
       [options]="optionsValue"
     ></demo-checkout-shipping-options>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutShippingOptionsComponent,
   ],

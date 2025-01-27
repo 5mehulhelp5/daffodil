@@ -10,6 +10,7 @@ import {
  */
 @Directive({
   selector: '[daffPrefix]',
+  standalone: false,
 })
 
 export class DaffPrefixDirective {

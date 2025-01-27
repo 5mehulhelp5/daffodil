@@ -10,7 +10,6 @@ import { DaffTextSnippetComponent } from '@daffodil/design/text-snippet';
   selector: 'basic-text-snippet',
   templateUrl: './basic-text-snippet.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffTextSnippetComponent,
   ],

@@ -19,7 +19,6 @@ import { DaffSidebarViewportBackdropComponent } from './sidebar-viewport-backdro
       [transparent]="transparent"
       (backdropClicked)="backdropFunction()"></daff-sidebar-viewport-backdrop>
     `,
-  standalone: true,
   imports: [
     DaffSidebarViewportBackdropComponent,
   ],

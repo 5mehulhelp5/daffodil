@@ -15,7 +15,6 @@ import { DaffNotificationActionsDirective } from './notification-actions.directi
   template: `
     <h3 daffNotificationActions>Lorem Ipsum</h3>
   `,
-  standalone: true,
   imports: [
     DaffNotificationActionsDirective,
   ],

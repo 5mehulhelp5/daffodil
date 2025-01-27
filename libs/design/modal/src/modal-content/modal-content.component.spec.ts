@@ -17,7 +17,6 @@ import { DaffModalContentComponent } from './modal-content.component';
       Content
     </daff-modal-content>
   `,
-  standalone: true,
   imports: [
     DaffModalContentComponent,
   ],

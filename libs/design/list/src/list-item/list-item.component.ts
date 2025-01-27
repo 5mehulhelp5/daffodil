@@ -15,12 +15,10 @@ import {
 } from '@daffodil/design';
 
 @Component({
-  selector:
-    'daff-list-item' + ',' +
-    'a[daff-list-item]',
+  selector: 'daff-list-item' + ',' +
+        'a[daff-list-item]',
   templateUrl: './list-item.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     NgIf,
     DaffPrefixSuffixModule,

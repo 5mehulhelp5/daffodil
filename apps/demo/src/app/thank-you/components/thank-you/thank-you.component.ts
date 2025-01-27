@@ -11,7 +11,6 @@ import { PrintOrderSummaryModule } from '../print-order-summary/print-order-summ
   selector: 'demo-thank-you',
   templateUrl: './thank-you.component.html',
   styleUrls: ['./thank-you.component.scss'],
-  standalone: true,
   imports: [
     PrintOrderSummaryModule,
   ],

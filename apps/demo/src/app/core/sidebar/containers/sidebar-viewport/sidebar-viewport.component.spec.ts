@@ -30,7 +30,10 @@ import {
 } from '../../actions/sidebar.actions';
 import * as fromDemoSidebar from '../../reducers';
 
-@Component({ selector: 'demo-sidebar', template: '' })
+@Component({
+  selector: 'demo-sidebar', template: '',
+  standalone: false,
+})
 class MockSidebarContainer {
   @Input() side: DaffSidebarSide;
 
@@ -115,7 +118,7 @@ describe('SidebarViewportContainer', () => {
       it('should call store.dispatch with a ToggleSidebar action', () => {
         spyOn(store, 'dispatch');
         component.toggle();
-        expect(store.dispatch).toHaveBeenCalledWith(new ToggleSidebar());
+        expect(<any>store.dispatch).toHaveBeenCalledWith(new ToggleSidebar());
       });
     });
 
@@ -123,7 +126,7 @@ describe('SidebarViewportContainer', () => {
       it('should call store.dispatch with a OpenSidebar action', () => {
         spyOn(store, 'dispatch');
         component.open();
-        expect(store.dispatch).toHaveBeenCalledWith(new OpenSidebar());
+        expect(<any>store.dispatch).toHaveBeenCalledWith(new OpenSidebar());
       });
     });
 
@@ -131,7 +134,7 @@ describe('SidebarViewportContainer', () => {
       it('should call store.dispatch with a CloseSidebar action', () => {
         spyOn(store, 'dispatch');
         component.close();
-        expect(store.dispatch).toHaveBeenCalledWith(new CloseSidebar());
+        expect(<any>store.dispatch).toHaveBeenCalledWith(new CloseSidebar());
       });
     });
 
@@ -139,7 +142,7 @@ describe('SidebarViewportContainer', () => {
       it('should call store.dispatch with a SetSidebarAction action', () => {
         spyOn(store, 'dispatch');
         component.setVisibility(true);
-        expect(store.dispatch).toHaveBeenCalledWith(new SetSidebarState(true));
+        expect(<any>store.dispatch).toHaveBeenCalledWith(new SetSidebarState(true));
       });
     });
   });

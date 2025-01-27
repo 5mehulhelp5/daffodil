@@ -15,7 +15,6 @@ import { DaffCalloutTaglineDirective } from './callout-tagline.directive';
   template: `
     <h3 daffCalloutTagline>Lorem Ipsum</h3>
   `,
-  standalone: true,
   imports: [
     DaffCalloutTaglineDirective,
   ],

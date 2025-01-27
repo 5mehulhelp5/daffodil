@@ -18,7 +18,6 @@ import { ThankYouComponent } from './thank-you.component';
       [order]="orderValue"
     ></demo-thank-you>
   `,
-  standalone: true,
   imports: [
     ThankYouComponent,
   ],

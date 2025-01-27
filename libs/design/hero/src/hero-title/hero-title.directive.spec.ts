@@ -15,7 +15,6 @@ import { DaffHeroTitleDirective } from './hero-title.directive';
   template: `
     <h1 daffHeroTitle>Lorem Ipsum</h1>
   `,
-  standalone: true,
   imports: [
     DaffHeroTitleDirective,
   ],

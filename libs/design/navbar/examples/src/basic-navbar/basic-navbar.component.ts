@@ -12,7 +12,6 @@ import { DAFF_NAVBAR_COMPONENTS } from '@daffodil/design/navbar';
   templateUrl: './basic-navbar.component.html',
   styleUrls: ['./basic-navbar.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_NAVBAR_COMPONENTS,
     DaffButtonComponent,

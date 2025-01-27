@@ -15,7 +15,6 @@ import { DAFF_CONTAINER_COMPONENTS } from '@daffodil/design/container';
   templateUrl: './compact-callout.component.html',
   styleUrls: ['./compact-callout.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CALLOUT_COMPONENTS,
     DAFF_CONTAINER_COMPONENTS,

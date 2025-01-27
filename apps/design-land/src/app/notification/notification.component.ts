@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-notification',
   templateUrl: './notification.component.html',
   styleUrls: ['./notification.component.scss'],
+  standalone: false,
 })
 export class DesignLandNotificationComponent {}

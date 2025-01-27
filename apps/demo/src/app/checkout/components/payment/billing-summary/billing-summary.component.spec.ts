@@ -19,7 +19,6 @@ import { DemoCheckoutBillingAddressSummaryComponent } from './billing-summary.co
       (edit)="editBillingInfoFunction()"
     ></demo-checkout-billing-summary>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutBillingAddressSummaryComponent,
   ],

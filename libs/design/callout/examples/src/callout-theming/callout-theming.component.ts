@@ -19,7 +19,6 @@ import { DAFF_CALLOUT_COMPONENTS } from '@daffodil/design/callout';
   templateUrl: './callout-theming.component.html',
   styleUrls: ['./callout-theming.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CALLOUT_COMPONENTS,
     FaIconComponent,

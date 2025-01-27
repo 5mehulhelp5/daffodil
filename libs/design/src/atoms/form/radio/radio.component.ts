@@ -17,6 +17,7 @@ let radioUniqueId = 0;
   selector: 'daff-radio',
   templateUrl: './radio.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffRadioComponent implements OnInit {
 

@@ -20,7 +20,6 @@ import { DaffThumbnailDirective } from '../thumbnail/thumbnail.directive';
       <div daffThumbnail></div>
     </daff-media-gallery>
   `,
-  standalone: true,
   imports: [
     DaffMediaGalleryComponent,
     DaffThumbnailDirective,
@@ -34,6 +33,7 @@ class WrapperComponent {
 @Component({
   template: '',
   selector: 'daff-media-renderer',
+  standalone: false,
 })
 class MockMediaRendererComponent {}
 
@@ -102,7 +102,6 @@ describe('@daffodil/design/media-gallery | DaffMediaGalleryComponent', () => {
 
 @Component({
   template: '<daff-media-gallery></daff-media-gallery>',
-  standalone: true,
   imports: [
     DaffMediaGalleryComponent,
     DaffThumbnailDirective,

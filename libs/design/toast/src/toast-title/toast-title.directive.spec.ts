@@ -15,7 +15,6 @@ import { DaffToastTitleDirective } from './toast-title.directive';
   template: `
     <h3 daffToastTitle>Title</h3>
   `,
-  standalone: true,
   imports: [
     DaffToastTitleDirective,
   ],

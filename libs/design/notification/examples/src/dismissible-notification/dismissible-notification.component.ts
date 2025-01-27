@@ -20,7 +20,6 @@ import { DAFF_NOTIFICATION_COMPONENTS } from '@daffodil/design/notification';
     }
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_NOTIFICATION_COMPONENTS,
     FaIconComponent,

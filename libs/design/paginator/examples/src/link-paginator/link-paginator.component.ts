@@ -16,7 +16,6 @@ import { DAFF_PAGINATOR_COMPONENTS } from '@daffodil/design/paginator';
   selector: 'link-paginator',
   templateUrl: './link-paginator.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_PAGINATOR_COMPONENTS,
     AsyncPipe,

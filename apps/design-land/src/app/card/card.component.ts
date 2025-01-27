@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
+  standalone: false,
 })
 export class DesignLandCardComponent {}

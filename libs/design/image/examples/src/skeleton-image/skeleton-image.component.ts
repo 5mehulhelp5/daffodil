@@ -10,7 +10,6 @@ import { DAFF_IMAGE_COMPONENTS } from '@daffodil/design/image';
   selector: 'skeleton-image',
   templateUrl: './skeleton-image.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_IMAGE_COMPONENTS,
   ],

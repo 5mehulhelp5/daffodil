@@ -18,7 +18,6 @@ import {
   templateUrl: './custom-select-tabs.component.html',
   styleUrl: './custom-select-tabs.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_TABS_COMPONENTS,
     DaffButtonComponent,

@@ -11,6 +11,7 @@ import { CodeExampleService } from '../service/code-example.service';
 @Component({
   selector: 'design-land-example-viewer-container',
   templateUrl: './example-viewer.component.html',
+  standalone: false,
 })
 export class DesignLandExampleViewerContainer implements OnInit {
   /**

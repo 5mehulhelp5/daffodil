@@ -15,7 +15,6 @@ import { DaffHeroTaglineDirective } from './hero-tagline.directive';
   template: `
     <h1 daffHeroTagline>Lorem Ipsum</h1>
   `,
-  standalone: true,
   imports: [
     DaffHeroTaglineDirective,
   ],

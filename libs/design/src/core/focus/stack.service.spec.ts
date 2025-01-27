@@ -14,6 +14,7 @@ import { DaffFocusStackService } from './stack.service';
     <button id="three">three</button>
     <button id="four">four</button>
   `,
+  standalone: false,
 })
 export class FakeComponent {}
 

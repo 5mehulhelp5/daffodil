@@ -13,7 +13,6 @@ import { DaffLinkSetItemComponent } from './link-set-item.component';
 
 @Component ({
   template: `<a daff-link-set-item href="#"></a>`,
-  standalone: true,
   imports: [
     DaffLinkSetItemComponent,
   ],

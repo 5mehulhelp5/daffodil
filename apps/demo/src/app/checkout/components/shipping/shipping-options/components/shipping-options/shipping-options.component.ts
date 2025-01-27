@@ -19,7 +19,6 @@ import { DemoCheckoutShippingFormGroup } from '../../models/shipping-form.type';
   selector: 'demo-checkout-shipping-options',
   templateUrl: './shipping-options.component.html',
   styleUrls: ['./shipping-options.component.scss'],
-  standalone: true,
   imports: [
     CommonModule,
     ReactiveFormsModule,

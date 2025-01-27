@@ -21,7 +21,6 @@ import { useDaffioNavList } from '../../../composables/nav-index';
   templateUrl: './component-overview.component.html',
   styleUrls: ['./component-overview.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     RouterLink,
     AsyncPipe,

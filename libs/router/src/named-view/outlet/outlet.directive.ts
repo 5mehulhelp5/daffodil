@@ -28,6 +28,7 @@ import { DaffRouterNamedViewService } from '../service/named-view.service';
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector
   selector: '[daffRouterNamedViewOutlet]',
+  standalone: false,
 })
 export class DaffRouterNamedViewOutletDirective implements OnInit, OnChanges, OnDestroy {
   private _destroyed = new Subject<boolean>();

@@ -15,6 +15,7 @@ import { DaffRadioModule } from '../radio.module';
   template: `
     <daff-radio name="test" value="testValue" aria-labelledby="user" aria-label="test"></daff-radio>
   `,
+  standalone: false,
 })
 class RadioWrapperComponent { }
 describe('DaffRadio Accessibility', () => {

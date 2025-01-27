@@ -18,7 +18,6 @@ import { DaffModalCloseDirective } from '../modal-close/modal-close.directive';
   templateUrl: './modal-header.component.html',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     NgIf,
     DaffIconButtonComponent,

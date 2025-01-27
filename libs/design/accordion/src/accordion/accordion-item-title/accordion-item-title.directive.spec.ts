@@ -15,7 +15,6 @@ import { DaffAccordionItemTitleDirective } from './accordion-item-title.directiv
   template: `
     <div daffAccordionItemTitle>Title</div>
   `,
-  standalone: true,
   imports: [
     DaffAccordionItemTitleDirective,
   ],

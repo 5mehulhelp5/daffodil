@@ -15,7 +15,6 @@ import { DAFF_IMAGE_COMPONENTS } from '@daffodil/design/image';
   templateUrl: './basic-card.component.html',
   styleUrls: ['./basic-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_CARD_COMPONENTS,
     DAFF_IMAGE_COMPONENTS,

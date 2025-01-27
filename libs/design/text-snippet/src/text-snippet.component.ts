@@ -16,7 +16,6 @@ import { DAFF_BUTTON_COMPONENTS } from '@daffodil/design/button';
   templateUrl: './text-snippet.component.html',
   styleUrls: ['./text-snippet.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     NgIf,
     DAFF_BUTTON_COMPONENTS,
@@ -38,6 +37,7 @@ export class DaffTextSnippetComponent {
   /**
    * An output event that can be used to track the state of the component externally.
    */
+  // eslint-disable-next-line @angular-eslint/no-output-native
   @Output() toggle: EventEmitter<boolean> = new EventEmitter();
 
   toggleSnippet() {

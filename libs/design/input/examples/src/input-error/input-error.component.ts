@@ -18,7 +18,6 @@ import {
   selector: 'input-error',
   templateUrl: './input-error.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffFormFieldModule,
     DaffInputModule,

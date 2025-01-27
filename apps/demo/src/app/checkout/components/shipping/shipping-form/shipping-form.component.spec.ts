@@ -23,7 +23,6 @@ import { DemoCheckoutShippingOptionsComponent } from '../shipping-options/compon
       [options]="optionsValue"
       (submitted)="submittedFunction($event)"></demo-checkout-shipping-form>
   `,
-  standalone: true,
   imports: [
     DemoCheckoutShippingFormComponent,
   ],

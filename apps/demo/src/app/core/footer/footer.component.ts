@@ -9,6 +9,7 @@ import {
   selector: 'demo-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
+  standalone: false,
 })
 export class FooterComponent {
   faTwitter = faTwitter;

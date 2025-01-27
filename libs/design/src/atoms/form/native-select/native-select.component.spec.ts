@@ -23,6 +23,7 @@ import { DaffNativeSelectComponent } from './native-select.component';
       <option value="3">Option 3</option>
     </select>
   `,
+  standalone: false,
 })
 
 class WrapperComponent {

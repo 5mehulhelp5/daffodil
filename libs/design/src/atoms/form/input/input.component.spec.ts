@@ -14,6 +14,7 @@ import { DaffInputComponent } from './input.component';
 
 @Component({
   template: `<input daff-input [formSubmitted]="formSubmittedValue">`,
+  standalone: false,
 })
 class WrapperComponent {
   formSubmittedValue: boolean;

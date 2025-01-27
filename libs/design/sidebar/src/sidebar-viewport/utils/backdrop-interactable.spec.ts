@@ -19,7 +19,6 @@ import { DaffSidebarComponent } from '../../sidebar/sidebar.component';
     <daff-sidebar side="left" mode="side"></daff-sidebar>
     <daff-sidebar side="right" [mode]="mode" [open]="true"></daff-sidebar>
   `,
-  standalone: true,
   imports: [
     DaffSidebarComponent,
   ],

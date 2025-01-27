@@ -20,7 +20,6 @@ import { DaffCalloutComponent } from './callout.component';
   template: `
     <daff-callout [color]="color" [textAlignment]="textAlignment" [compact]="compact"></daff-callout>
   `,
-  standalone: true,
   imports: [
     DaffCalloutComponent,
   ],

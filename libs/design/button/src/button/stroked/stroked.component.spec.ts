@@ -16,7 +16,6 @@ import { DaffStrokedButtonComponent } from './stroked.component';
     <a daff-stroked-button>Stroked Link Button</a>
     <button daff-stroked-button>Stroked Button</button>
   `,
-  standalone: true,
   imports: [
     DaffStrokedButtonComponent,
   ],

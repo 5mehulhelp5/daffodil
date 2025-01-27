@@ -17,6 +17,7 @@ import { DaffDocsApiNavList } from '@daffodil/docs-utils';
   templateUrl: './api-list-page.component.html',
   styleUrls: ['./api-list-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioApiListPageComponent implements OnInit {
   /**

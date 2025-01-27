@@ -27,7 +27,6 @@ class MockMediaRendererComponent {}
     <daff-media-gallery>
       <div daffThumbnail (becameSelected)="becameSelectedFunction()"></div>
     </daff-media-gallery>`,
-  standalone: true,
   imports: [
     DaffMediaGalleryComponent,
     DaffThumbnailDirective,

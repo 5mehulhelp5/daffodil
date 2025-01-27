@@ -60,7 +60,6 @@ import { DaffTabLabelComponent } from './tab-label/tab-label.component';
   styleUrl: './tabs.component.scss',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     NgTemplateOutlet,
     RouterLink,

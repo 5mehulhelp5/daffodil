@@ -24,7 +24,6 @@ import { DaffioDocsDynamicContent } from '../../dynamic-content/dynamic-content.
   selector: 'daffio-docs-page',
   templateUrl: './docs-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     AsyncPipe,
     RouterModule,

@@ -21,7 +21,6 @@ import { DaffButtonComponent } from '@daffodil/design/button';
   selector: 'checkbox-set',
   templateUrl: './checkbox-set.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffCheckboxModule,
     ReactiveFormsModule,

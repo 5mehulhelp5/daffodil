@@ -19,7 +19,6 @@ import { DaffIconButtonComponent } from '@daffodil/design/button';
     }
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffIconButtonComponent,
     FaIconComponent,

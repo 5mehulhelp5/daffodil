@@ -14,6 +14,7 @@ import { DaffCheckboxModule } from '../checkbox.module';
   template: `
     <daff-checkbox aria-label='testLabel' aria-labelledby='testParent'></daff-checkbox>
   `,
+  standalone: false,
 })
 class CheckboxWrapperComponent { }
 

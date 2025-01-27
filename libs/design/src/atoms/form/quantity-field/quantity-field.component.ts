@@ -28,6 +28,7 @@ import { DaffFormFieldControl } from '../form-field/form-field-control';
     },
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffQuantityFieldComponent implements ControlValueAccessor, DaffFormFieldControl {
 

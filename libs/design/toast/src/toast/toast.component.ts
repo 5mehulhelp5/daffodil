@@ -46,7 +46,6 @@ import { DaffToastActionsDirective } from '../toast-actions/toast-actions.direct
   ],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     NgIf,
   ],

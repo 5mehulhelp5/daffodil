@@ -26,6 +26,7 @@ import { DaffNativeSelectModule } from '../native-select/public_api';
       [selectMax]="selectMaxValue"
     ></daff-quantity-field>
   `,
+  standalone: false,
 })
 class WrapperComponent {
   minValue = 0;

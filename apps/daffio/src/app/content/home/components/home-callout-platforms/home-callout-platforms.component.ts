@@ -9,6 +9,7 @@ import {
   templateUrl: './home-callout-platforms.component.html',
   styleUrls: ['./home-callout-platforms.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 
 export class DaffioHomeCalloutPlatformsComponent {

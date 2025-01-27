@@ -8,6 +8,7 @@ import {
   templateUrl: './iphone.component.html',
   styleUrls: ['./iphone.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class IphoneComponent{
 }

@@ -10,7 +10,6 @@ import { DAFF_IMAGE_COMPONENTS } from '@daffodil/design/image';
   selector: 'basic-image',
   templateUrl: './basic-image.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_IMAGE_COMPONENTS,
   ],

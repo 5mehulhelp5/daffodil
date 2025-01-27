@@ -9,6 +9,7 @@ import { DaffImageComponent } from '../image.component';
 
 @Component({
   template: `<daff-image></daff-image>`,
+  standalone: false,
 })
 
 class WrapperComponent {

@@ -11,6 +11,7 @@ import { DaffBestSellersFacade } from '@daffodil/product/state';
   selector: 'demo-best-sellers',
   templateUrl: './best-sellers.component.html',
   styleUrls: ['./best-sellers.component.scss'],
+  standalone: false,
 })
 export class BestSellersComponent implements OnInit {
 

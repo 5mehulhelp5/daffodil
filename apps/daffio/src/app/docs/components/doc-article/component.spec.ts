@@ -25,6 +25,7 @@ import { DaffioDocsTableOfContentsModule } from '../table-of-contents/table-of-c
 		[toc]="tocValue"
 		[breadcrumbs]="breadcrumbsValue"
 	></daffio-doc-article>`,
+  standalone: false,
 })
 class WrapperComponent {
   tocValue: DaffDocTableOfContents;

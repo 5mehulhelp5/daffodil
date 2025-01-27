@@ -13,7 +13,6 @@ import { DaffSidebarHeaderTitleDirective } from './sidebar-header-title.directiv
 
 @Component({
   template: `<h2 daffSidebarHeaderTitle>Title</h2>`,
-  standalone: true,
   imports: [
     DaffSidebarHeaderTitleDirective,
   ],

@@ -15,6 +15,7 @@ import { DaffRouterNamedViewOutletDirective } from './outlet.directive';
   template: `
     <ng-container *ngIf="view" [daffRouterNamedViewOutlet]="view"></ng-container>
   `,
+  standalone: false,
 })
 class WrapperComponent {
   view?: string;
@@ -22,11 +23,13 @@ class WrapperComponent {
 
 @Component({
   template: 'component A',
+  standalone: false,
 })
 class AComponent {}
 
 @Component({
   template: 'component B',
+  standalone: false,
 })
 class BComponent {}
 

@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'design-land-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
+  standalone: false,
 })
 export class DesignLandMenuComponent {}

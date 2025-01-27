@@ -23,6 +23,7 @@ import { DaffioSidebarService } from '../../services/sidebar.service';
   templateUrl: './sidebar-viewport.component.html',
   styleUrls: ['./sidebar-viewport.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioSidebarViewportContainer implements OnInit {
   showSidebar: Signal<boolean>;

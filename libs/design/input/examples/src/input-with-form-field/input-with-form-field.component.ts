@@ -13,7 +13,6 @@ import {
   selector: 'input-with-form-field',
   templateUrl: './input-with-form-field.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [DaffFormFieldModule, DaffInputModule],
 })
 export class InputWithFormFieldComponent {

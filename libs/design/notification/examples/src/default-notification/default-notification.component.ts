@@ -15,7 +15,6 @@ import { DAFF_NOTIFICATION_COMPONENTS } from '@daffodil/design/notification';
   templateUrl: './default-notification.component.html',
   styleUrls: ['./default-notification.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_NOTIFICATION_COMPONENTS,
     FaIconComponent,

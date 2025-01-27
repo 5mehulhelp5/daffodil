@@ -13,7 +13,6 @@ import { DaffSidebarHeaderActionDirective } from './sidebar-header-action.direct
 
 @Component({
   template: `<div daffSidebarHeaderAction>Action</div>`,
-  standalone: true,
   imports: [
     DaffSidebarHeaderActionDirective,
   ],

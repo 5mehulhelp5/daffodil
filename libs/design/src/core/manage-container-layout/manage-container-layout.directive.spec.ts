@@ -14,6 +14,7 @@ import { DaffManageContainerLayoutDirective } from './manage-container-layout.di
 @Component({
   template: `
 		<div daffManageContainerLayout></div>`,
+  standalone: false,
 })
 
 class WrapperComponent {}

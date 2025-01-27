@@ -8,5 +8,6 @@ import {
   templateUrl: './home-view.component.html',
   styleUrls: ['./home-view.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioHomeViewComponent {}

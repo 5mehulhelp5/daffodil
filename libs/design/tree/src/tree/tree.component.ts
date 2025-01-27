@@ -59,7 +59,6 @@ import { hydrateTree } from '../utils/hydrate-tree';
   hostDirectives: [{
     directive: DaffArticleEncapsulatedDirective,
   }],
-  standalone: true,
   imports: [
     NgFor,
     NgTemplateOutlet,

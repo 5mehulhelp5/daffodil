@@ -16,7 +16,6 @@ import { DaffMenuModule } from '@daffodil/design/menu';
   selector: 'menu-content',
   templateUrl: './menu-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffMenuModule,
     FaIconComponent,

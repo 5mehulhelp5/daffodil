@@ -15,7 +15,6 @@ import { DAFF_HERO_COMPONENTS } from '@daffodil/design/hero';
   templateUrl: './hero-with-grid.component.html',
   styleUrls: ['./hero-with-grid.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_HERO_COMPONENTS,
     DAFF_CONTAINER_COMPONENTS,

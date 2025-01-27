@@ -16,7 +16,6 @@ import { DaffUnderlineButtonComponent } from './underline.component';
     <a daff-underline-button>Underline Link Button</a>
     <button daff-underline-button>Underline Button</button>
   `,
-  standalone: true,
   imports: [
     DaffUnderlineButtonComponent,
   ],

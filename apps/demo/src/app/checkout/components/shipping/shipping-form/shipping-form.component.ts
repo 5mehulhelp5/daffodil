@@ -22,7 +22,6 @@ import {
   selector: 'demo-checkout-shipping-form',
   templateUrl: './shipping-form.component.html',
   styleUrls: ['./shipping-form.component.scss'],
-  standalone: true,
   imports: [
     DemoCheckoutAddressFormComponent,
     DemoCheckoutShippingOptionsComponent,

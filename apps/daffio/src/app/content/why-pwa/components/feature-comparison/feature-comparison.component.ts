@@ -12,6 +12,7 @@ import {
   templateUrl: './feature-comparison.component.html',
   styleUrls: ['./feature-comparison.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioFeatureComparisonComponent {
   faCheck = faCheck;

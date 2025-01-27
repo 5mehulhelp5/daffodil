@@ -18,7 +18,6 @@ import {
   templateUrl: './custom-range-quantity-field.component.html',
   styleUrls: ['./custom-range-quantity-field.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffFormFieldModule,
     DaffQuantityFieldModule,

@@ -35,7 +35,6 @@ import { DemoCheckoutAddressFormGroup } from '../../models/address-form.type';
   selector: 'demo-checkout-address-form',
   templateUrl: './address-form.component.html',
   styleUrls: ['./address-form.component.scss'],
-  standalone: true,
   imports: [
     CommonModule,
     ReactiveFormsModule,

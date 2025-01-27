@@ -22,7 +22,6 @@ import { DaffRaisedButtonComponent } from '@daffodil/design/button';
     }
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffRaisedButtonComponent,
     FaIconComponent,

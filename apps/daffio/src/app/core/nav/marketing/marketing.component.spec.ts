@@ -18,7 +18,6 @@ import { DaffioNavLink } from '../link/type';
 
 @Component({
   template: '<daffio-nav-marketing-container></daffio-nav-marketing-container>',
-  standalone: true,
   imports: [
     DaffioMarketingNavContainer,
   ],

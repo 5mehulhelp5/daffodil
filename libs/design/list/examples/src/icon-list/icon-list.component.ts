@@ -12,7 +12,6 @@ import { DAFF_LIST_COMPONENTS } from '@daffodil/design/list';
   selector: 'icon-list',
   templateUrl: './icon-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_LIST_COMPONENTS,
     FaIconComponent,

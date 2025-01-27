@@ -39,7 +39,6 @@ const status: Record<string, DaffToastData> =  {
   templateUrl: './toast-status.component.html',
   styleUrls: ['./toast-status.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DaffButtonComponent,
     ReactiveFormsModule,

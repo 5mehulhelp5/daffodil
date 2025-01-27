@@ -94,6 +94,7 @@ export class FailGuard  {
 
 @Component({
   template: '',
+  standalone: false,
 })
 class MockComponent {}
 

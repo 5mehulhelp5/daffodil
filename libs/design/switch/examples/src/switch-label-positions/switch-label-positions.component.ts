@@ -15,7 +15,6 @@ import { DAFF_SWITCH_COMPONENTS } from '@daffodil/design/switch';
   selector: 'switch-label-positions',
   templateUrl: './switch-label-positions.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_SWITCH_COMPONENTS,
     ReactiveFormsModule,

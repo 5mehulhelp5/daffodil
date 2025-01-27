@@ -15,6 +15,7 @@ import { DAFF_BRANDING_CONSTANTS } from '@daffodil/branding';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioFooterComponent {
 

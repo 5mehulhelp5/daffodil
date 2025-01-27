@@ -16,7 +16,6 @@ import { DaffModalService } from '../service/modal.service';
   template: `
     <button daffModalClose></button>
   `,
-  standalone: true,
   imports: [
     DaffModalCloseDirective,
   ],

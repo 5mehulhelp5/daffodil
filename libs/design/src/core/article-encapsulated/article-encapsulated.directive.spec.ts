@@ -14,6 +14,7 @@ import { DaffArticleEncapsulatedDirective } from './article-encapsulated.directi
 @Component({
   template: `
 		<div daffArticleEncapsulated></div>`,
+  standalone: false,
 })
 
 class WrapperComponent {}

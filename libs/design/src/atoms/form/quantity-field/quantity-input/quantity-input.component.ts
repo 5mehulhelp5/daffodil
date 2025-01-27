@@ -21,6 +21,7 @@ import { DaffInputComponent } from '../../input/public_api';
   selector: 'daff-quantity-input',
   templateUrl: './quantity-input.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffQuantityInputComponent implements OnInit, OnDestroy {
   @ViewChild(DaffInputComponent) input: DaffInputComponent;

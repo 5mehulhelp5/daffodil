@@ -12,7 +12,6 @@ import { DAFF_TABS_COMPONENTS } from '@daffodil/design/tabs';
   selector: 'initially-select-tab',
   templateUrl: './initially-select-tab.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     DAFF_TABS_COMPONENTS,
     FaIconComponent,

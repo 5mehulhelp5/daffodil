@@ -60,7 +60,6 @@ class StatelessComponent {
 		<daff-stateful (toggled)="toggledFunction()"></daff-stateful>
 		<daff-stateless [open]="statelessOpen" (toggled)="toggledFunction()"></daff-stateless>
 	`,
-  standalone: true,
   imports: [
     StatefulComponent,
     StatelessComponent,

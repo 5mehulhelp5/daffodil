@@ -29,6 +29,7 @@ import { DaffThumbnailDirective } from '../thumbnail/thumbnail.directive';
       provide: daffThumbnailCompatToken, useExisting: DaffMockThumbnail1Component,
     },
   ],
+  standalone: false,
 })
 export class DaffMockThumbnail1Component {}
 
@@ -41,6 +42,7 @@ export class DaffMockThumbnail1Component {}
       provide: daffThumbnailCompatToken, useExisting: DaffMockThumbnail2Component,
     },
   ],
+  standalone: false,
 })
 export class DaffMockThumbnail2Component {}
 

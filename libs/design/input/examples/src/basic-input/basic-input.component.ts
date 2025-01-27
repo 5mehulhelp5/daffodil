@@ -10,7 +10,6 @@ import { DaffInputModule } from '@daffodil/design';
   selector: 'basic-input',
   templateUrl: './basic-input.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [DaffInputModule],
 })
 export class BasicInputComponent {

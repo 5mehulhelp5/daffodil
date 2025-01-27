@@ -18,6 +18,7 @@ const stubQty = 1;
 
 @Component({
   template: '<demo-product-added [qty]="qtyValue" [product]="productValue"></demo-product-added>',
+  standalone: false,
 })
 class WrapperComponent {
   qtyValue: number = stubQty;

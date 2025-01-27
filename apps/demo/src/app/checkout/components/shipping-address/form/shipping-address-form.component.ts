@@ -21,7 +21,6 @@ import {
   selector: 'demo-checkout-shipping-address-form',
   templateUrl: './shipping-address-form.component.html',
   styleUrls: ['./shipping-address-form.component.scss'],
-  standalone: true,
   imports: [
     DemoCheckoutAddressFormComponent,
     ReactiveFormsModule,

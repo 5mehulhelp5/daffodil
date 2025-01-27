@@ -11,6 +11,7 @@ import { DaffCart } from '@daffodil/cart';
   templateUrl: './cart-summary-wrapper.component.html',
   styleUrls: ['./cart-summary-wrapper.component.scss'],
   encapsulation: ViewEncapsulation.None,
+  standalone: false,
 })
 export class CartSummaryWrapperComponent {
 

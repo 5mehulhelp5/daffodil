@@ -17,7 +17,6 @@ import { DaffApiNavDoc } from '@daffodil/docs-utils';
     directive: DaffArticleEncapsulatedDirective,
   }],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [
     RouterLink,
   ],

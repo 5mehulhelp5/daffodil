@@ -18,6 +18,7 @@ import { DAFFIO_DOCS_LIST_SIDEBAR_ID } from '../../containers/docs-list/sidebar.
   templateUrl: './component.html',
   styleUrls: ['./component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class DaffioDocArticleComponent {
   faBars = faBars;

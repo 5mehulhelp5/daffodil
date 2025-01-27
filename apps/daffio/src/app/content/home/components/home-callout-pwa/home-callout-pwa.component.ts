@@ -9,6 +9,7 @@ import {
   templateUrl: './home-callout-pwa.component.html',
   styleUrls: ['./home-callout-pwa.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 
 export class DaffioHomeCalloutPwaComponent {
