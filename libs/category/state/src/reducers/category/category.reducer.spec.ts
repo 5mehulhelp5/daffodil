@@ -13,7 +13,6 @@ import {
   DaffCategoryPageChangeCurrentPage,
   DaffCategoryPageChangeSortingOption,
   DaffCategoryPageToggleFilter,
-  DaffCategoryPageChangeFilters,
   DaffCategoryPageLoad,
   DaffCategoryPageLoadSuccess,
   DaffCategoryPageLoadFailure,
@@ -132,7 +131,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
@@ -146,7 +145,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
@@ -163,7 +162,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
@@ -184,57 +183,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
-    });
-  });
-
-  describe('when CategoryPageChangeFiltersAction is triggered', () => {
-    let result: DaffCategoryReducerState;
-    let stateUnderTest: DaffCategoryReducerState;
-
-    beforeEach(() => {
-      currentAppliedEqualFilterOption = equalOptionFactory.create({
-        applied: true,
-      });
-      currentUnappliedEqualFilterOption = equalOptionFactory.create({
-        applied: false,
-      });
-      currentEqualFilter = equalFilterFactory.create({
-        options: daffFilterEqualOptionArrayToDict([
-          currentAppliedEqualFilterOption,
-          currentUnappliedEqualFilterOption,
-        ]),
-      });
-      currentRangeFilterPair = rangePairFactory.create();
-      currentRangeFilter = rangeFilterFactory.create({
-        options: daffFilterRangePairArrayToDict([currentRangeFilterPair]),
-      });
-
-      equalFilterRequest = equalFilterRequestFactory.create({
-        name: currentEqualFilter.name,
-        value: [currentUnappliedEqualFilterOption.value],
-      });
-      rangeFilterRequestOption = rangeFilterRequestOptionFactory.create();
-      rangeFilterRequest = rangeFilterRequestFactory.create({
-        value: rangeFilterRequestOption,
-        name: currentRangeFilter.name,
-      });
-      currentRangeFilterPairLabel = daffFilterComputeRangePairLabel(currentRangeFilterPair.min.value, currentRangeFilterPair.max.value);
-      rangeFilterRequestOptionLabel = daffFilterComputeRangePairLabel(rangeFilterRequestOption.min, rangeFilterRequestOption.max);
-      stateUnderTest = {
-        ...daffCategoryInitialState,
-      };
-
-      const changeCategoryFilters = new DaffCategoryPageChangeFilters([
-        equalFilterRequest,
-        rangeFilterRequest,
-      ]);
-
-      result = daffCategoryReducer(stateUnderTest, changeCategoryFilters);
-    });
-
-    it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
@@ -283,7 +232,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
@@ -304,7 +253,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
@@ -337,7 +286,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
@@ -360,7 +309,7 @@ describe('@daffodil/category/state | daffCategoryReducer', () => {
     });
 
     it('sets daffState to mutating', () => {
-      expect(result.daffState).toEqual(DaffState.Mutating);
+      expect(result.daffState).toEqual(DaffState.Updating);
     });
   });
 
