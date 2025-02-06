@@ -15,8 +15,8 @@ import {
   daffDocsGetLinkUrl,
 } from '@daffodil/docs-utils';
 
-import { CollectLinkableSymbolsProcessor } from './collect-linkable-symbols';
 import { FilterableProcessor } from '../utils/filterable-processor.type';
+import { linkSymbols } from '../utils/link-symbols';
 
 hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('ts', typescript);
@@ -33,7 +33,7 @@ export class MarkdownCodeProcessor implements FilterableProcessor {
     markedHighlight({
       highlight: (code, lang, info) => {
         const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-        return hljs.highlight(code, { language }).value;
+        return linkSymbols(hljs.highlight(code, { language }).value);
       },
     }),
     {
@@ -52,10 +52,8 @@ export class MarkdownCodeProcessor implements FilterableProcessor {
       renderer: {
         heading: (text: string, level: number, raw: string) =>
           `<h${level} id="${slugify(raw)}">${text}</h${level}>`,
-        codespan: (text: string): string | false => {
-          const path = CollectLinkableSymbolsProcessor.symbols.get(text);
-          return path ? `<a href="${path}"><code>${text}</code></a>` : false;
-        },
+        codespan: (text: string): string | false =>
+          `<code>${linkSymbols(text)}</code>`,
       },
     },
   );
@@ -71,7 +69,7 @@ export class MarkdownCodeProcessor implements FilterableProcessor {
   ) {}
 
   $process(docs: Document[]) {
-    const ret = docs.map((doc) => {
+    return docs.map((doc) => {
       if (this.docTypes.includes(doc.docType)) {
         doc[this.contentKey] = this.marked.parse(typeof doc.description === 'undefined' ? doc.content : doc.description);
         if (doc.examples) {
@@ -84,11 +82,12 @@ export class MarkdownCodeProcessor implements FilterableProcessor {
           doc.longDescription = (<string>this.marked.parse(doc.longDescription)).replaceAll(/(^<p>)|(<\/p>(\n)*$)/gm, '');
         }
         doc.slug = slugify(doc.name || doc.title);
+        if (doc.sourceApiBlock) {
+          doc.sourceApiBlock = this.marked.parse(`\`\`\`ts\n${doc.sourceApiBlock}\n\`\`\``);
+        }
       };
       return doc;
     });
-
-    return ret;
   }
 };
 
